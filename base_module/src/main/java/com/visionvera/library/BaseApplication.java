@@ -56,7 +56,7 @@ public class BaseApplication extends MultiDexApplication {
     }
 
     private boolean isDebug() {
-        return BuildConfig.DEBUG;
+        return true;
     }
 
 
@@ -99,7 +99,7 @@ public class BaseApplication extends MultiDexApplication {
         Logger.addLogAdapter(new AndroidLogAdapter(formatStrategy) {
             @Override
             public boolean isLoggable(int priority, String tag) {
-                return BuildConfig.LOG;
+                return true;
             }
         });
     }

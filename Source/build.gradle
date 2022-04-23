@@ -32,21 +32,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    flavorDimensions "default"
-    productFlavors {
-        urlDevelop { //开发地址
-
-        }
-        urlTest { //测试环境
-
-        }
-        urlYanshi_Tx {//演示环境 腾讯云
-
-        }
-        urlFormat {//正式环境
-
-        }
-    }
+//    flavorDimensions "default"
+//    productFlavors {
+//        urlDevelop { //开发地址
+//
+//        }
+//        urlTest { //测试环境
+//
+//        }
+//        urlYanshi_Tx {//演示环境 腾讯云
+//
+//        }
+//        urlFormat {//正式环境
+//
+//        }
+//    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8

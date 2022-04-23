@@ -1,7 +1,5 @@
 package com.visionvera.library.base;
 
-import com.visionvera.library.BuildConfig;
-
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
@@ -86,11 +84,13 @@ public class Constant {
          * 这个url是gradle中配置的。可以通过指定打包方式选择不同的值
          * 网络请求的baseUrl
          */
-        String request_base_url = BuildConfig.BaseUrl;
-        String bugly_appid = BuildConfig.bugly_appid;
-        String WX_APP_ID = BuildConfig.weixin_app_id;
+//        String request_base_url = BuildConfig.BaseUrl;
+//        String bugly_appid = BuildConfig.bugly_appid;
+//        String WX_APP_ID = BuildConfig.weixin_app_id;
 
-
+        String request_base_url = "http://202.168.169.48:34220/";
+        String bugly_appid ="e4e326411d";
+        String WX_APP_ID = "wx0bb4497d688245fe";
         //开发地址
 //        String request_base_url = "http://58.30.9.142:34220/";
 //        String bugly_appid="2417c71f42";//李龙丰的qq账号，测试使用。

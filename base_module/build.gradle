@@ -37,42 +37,42 @@ android {
         }
     }
 
-    flavorDimensions "default"
-    productFlavors {
-        urlDevelop { //开发地址
-            buildConfigField 'String', 'BaseUrl', '"http://58.30.9.142:34220/"'
-//            buildConfigField 'String','BaseUrl','"http://mhsp-dev.51vision.com:34220/"'
-            //李龙丰的qq账号，测试使用。
-            buildConfigField 'String', 'bugly_appid', '"2417c71f42"'
-            //微信支付使用
-            buildConfigField 'String', 'weixin_app_id', '"wx0289f4899915a7de"'
-            resValue 'string', 'appName', '"粤心安开发"'
-        }
-        urlTest {//测试环境
-            buildConfigField 'String', 'BaseUrl', '"http://58.30.9.142:34219/"'
-            //李龙丰的qq账号，测试使用。
-            buildConfigField 'String', 'bugly_appid', '"2417c71f42"'
-            //微信支付使用
-            buildConfigField 'String', 'weixin_app_id', '"wx0289f4899915a7de"'
-            resValue 'string', 'appName', '"粤心安测试"'
-        }
-        urlYanshi_Tx {//演示环境  腾讯云
-            buildConfigField 'String', 'BaseUrl', '"http://show.psychol.visionveramh.com/"'
-            //李龙丰的qq账号，测试使用。
-            buildConfigField 'String', 'bugly_appid', '"2417c71f42"'
-            //微信支付使用
-            buildConfigField 'String', 'weixin_app_id', '"wx0289f4899915a7de"'
-            resValue 'string', 'appName', '"粤心安演示"'
-        }
-        urlFormat {//正式（地区正式）     广东省惠州专属环境
-            buildConfigField 'String', 'BaseUrl', '"http://202.168.169.48:34220/"'
-            //刘传政的qq账号，正式使用。
-            buildConfigField 'String', 'bugly_appid', '"e4e326411d"'
-            //微信支付使用
-            buildConfigField 'String', 'weixin_app_id', '"wx0bb4497d688245fe"'
-            resValue 'string', 'appName', '"粤心安"'
-        }
-    }
+//    flavorDimensions "default"
+//    productFlavors {
+//        urlDevelop { //开发地址
+//            buildConfigField 'String', 'BaseUrl', '"http://58.30.9.142:34220/"'
+////            buildConfigField 'String','BaseUrl','"http://mhsp-dev.51vision.com:34220/"'
+//            //李龙丰的qq账号，测试使用。
+//            buildConfigField 'String', 'bugly_appid', '"2417c71f42"'
+//            //微信支付使用
+//            buildConfigField 'String', 'weixin_app_id', '"wx0289f4899915a7de"'
+//            resValue 'string', 'appName', '"粤心安开发"'
+//        }
+//        urlTest {//测试环境
+//            buildConfigField 'String', 'BaseUrl', '"http://58.30.9.142:34219/"'
+//            //李龙丰的qq账号，测试使用。
+//            buildConfigField 'String', 'bugly_appid', '"2417c71f42"'
+//            //微信支付使用
+//            buildConfigField 'String', 'weixin_app_id', '"wx0289f4899915a7de"'
+//            resValue 'string', 'appName', '"粤心安测试"'
+//        }
+//        urlYanshi_Tx {//演示环境  腾讯云
+//            buildConfigField 'String', 'BaseUrl', '"http://show.psychol.visionveramh.com/"'
+//            //李龙丰的qq账号，测试使用。
+//            buildConfigField 'String', 'bugly_appid', '"2417c71f42"'
+//            //微信支付使用
+//            buildConfigField 'String', 'weixin_app_id', '"wx0289f4899915a7de"'
+//            resValue 'string', 'appName', '"粤心安演示"'
+//        }
+//        urlFormat {//正式（地区正式）     广东省惠州专属环境
+//            buildConfigField 'String', 'BaseUrl', '"http://202.168.169.48:34220/"'
+//            //刘传政的qq账号，正式使用。
+//            buildConfigField 'String', 'bugly_appid', '"e4e326411d"'
+//            //微信支付使用
+//            buildConfigField 'String', 'weixin_app_id', '"wx0bb4497d688245fe"'
+//            resValue 'string', 'appName', '"粤心安"'
+//        }
+//    }
 
     //指定jdk版本
     compileOptions {
