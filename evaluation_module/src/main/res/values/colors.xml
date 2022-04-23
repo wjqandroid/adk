@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="evaluation_module_colorPrimary">#008577</color>
+    <color name="evaluation_module_colorPrimaryDark">#00574B</color>
+    <color name="evaluation_module_colorAccent">#D81B60</color>
+    <color name="evaluation_module_tab_text_slelect_color">#3E86FE</color>
+    <color name="evaluation_module_tab_text_unslelect_color">#333333</color>
+    <color name="evaluation_module_theme">#3E86FE</color>
+    <color name="common_bg_gray">#fff6f6f6</color>
+    <color name="bgtint">#555555</color>
+
+    <color name="color_f5f7fb" tools:ignore="ResourceName">#F5F7FB</color>
+    <color name="color_a0a5b0" tools:ignore="ResourceName">#A0A5B0</color>
+    <color name="color_333333" tools:ignore="ResourceName">#333333</color>
+    <color name="color_5579A9" tools:ignore="ResourceName">#5579A9</color>
+    <color name="color_8f8f8f" tools:ignore="ResourceName">#8F8F8F</color>
+    <color name="color_999999" tools:ignore="ResourceName">#999999</color>
+    <color name="color_3ca7ff" tools:ignore="ResourceName">#3CA7FF</color>
+    <color name="color_3362a1" tools:ignore="ResourceName">#3362A1</color>
+
+
+
+</resources>

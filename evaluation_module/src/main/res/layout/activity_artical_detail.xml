@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/base_module_back" />
+
+
+                <TextView
+                    android:textColor="@color/common_text"
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:maxLength="12"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="文章详情" />
+
+                <LinearLayout
+                    android:id="@+id/llAnswer"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="5dp"
+                    android:layout_marginEnd="@dimen/common_padding_horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/img_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/edit_article_answer" />
+
+                    <TextView
+                        android:id="@+id/tv_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toLeftOf="@id/img_right"
+                        android:text="写回答"
+                        android:textColor="@color/base_module_theme"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_above="@id/llBottomToolBar"
+        android:layout_below="@id/llTitle"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/ibNext"
+        android:layout_marginEnd="@dimen/common_padding_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_next_article"
+        android:layout_width="55dp"
+        android:layout_height="55dp" />
+
+    <LinearLayout
+        android:elevation="5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/common_padding_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/llBottomToolBar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:id="@+id/llToEvaluate"
+            android:paddingHorizontal="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_input_evaluate"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="38dp">
+
+            <ImageView
+                android:layout_marginTop="-3dp"
+                android:background="@drawable/ic_edit_evaluate"
+                android:layout_width="25dp"
+                android:layout_height="27dp" />
+
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="写评论…"
+                android:textColor="@color/common_text2"
+                android:textSize="12sp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="38dp">
+
+            <RelativeLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/rlEvaluateList"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:background="@drawable/ic_evaluate"
+                    android:layout_width="25dp"
+                    android:layout_height="27dp" />
+
+                <TextView
+                    android:id="@+id/tvEvaluateCount"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="评论0"
+                    android:textColor="#ff5a5f60"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/rlCollect"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivCollect"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:background="@drawable/ic_article_uncollect_little"
+                    android:layout_width="25dp"
+                    android:layout_height="27dp" />
+
+                <TextView
+                    android:id="@+id/tvCollectCount"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="收藏0"
+                    android:textColor="#ff5a5f60"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/rlLike"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivLike"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:background="@drawable/ic_unlike_little"
+                    android:layout_width="25dp"
+                    android:layout_height="27dp" />
+
+                <TextView
+                    android:id="@+id/tvLikeCount"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="点赞0"
+                    android:textColor="#ff5a5f60"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

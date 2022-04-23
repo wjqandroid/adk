@@ -1,0 +1,94 @@
+apply plugin: 'com.jakewharton.butterknife'
+//控制lib模式或app模式
+def isApplication = rootProject.ext.isAccountApplication
+if (isApplication) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+
+        if (isApplication) {
+            //组件模式下设置applicationId
+            applicationId "com.visionvera.psychologist.account_module"
+        }
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "default"
+    productFlavors{
+        urlDevelop{ //开发地址
+
+        }
+        urlTest{ //测试环境
+
+        }
+        urlYanshi_Tx{//演示环境 腾讯云
+
+        }
+        urlFormat{//正式环境
+
+        }
+    }
+
+    //jdk1.8
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            if (isApplication) {
+                manifest.srcFile 'src/main/java/module/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+            }
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    //让studio提示程序员加前缀
+    //resourcePrefix 只能限定Xml资源，并不能限定图片资源，图片资源扔需要自身注意设置前缀名
+//    resourcePrefix "${project.name}_"
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation project(path:':base_module')
+//    implementation(name:'base_module-urlFormat-debug', ext:'aar')
+
+
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+}

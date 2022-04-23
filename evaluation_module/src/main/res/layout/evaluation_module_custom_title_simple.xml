@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/COLOR_WHITE_FFFFFF"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/evaluation_module_iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingHorizontal="18dp"
+        android:src="@drawable/base_module_back" />
+
+    <TextView
+        android:id="@+id/evaluation_module_tv_title"
+        android:layout_toRightOf="@+id/evaluation_module_iv_back"
+        android:layout_toLeftOf="@+id/evaluation_module_invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        tools:text="标题真题"/>
+
+    <ImageView
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/evaluation_module_invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingHorizontal="18dp"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:src="@drawable/base_module_back" />
+
+</RelativeLayout>

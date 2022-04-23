@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_module_common_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="6dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="false"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/evaluation_module_happiness_index_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginVertical="15dp"
+                        android:text="@string/evaluation_module_happiness_index"
+                        android:textColor="@color/COLOR_BLACK_333333"
+                        android:textSize="16sp"
+                        />
+
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/happiness_index_linechart"
+                        android:layout_below="@+id/evaluation_module_happiness_index_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/evaluation_module_happiness_index_tv"
+                        android:text="@string/evaluation_module_score_number"
+                        android:textColor="@color/COLOR_GRAY_666666"
+                        android:textSize="8sp"
+                        />
+
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/evaluation_module_date"
+                        android:textColor="@color/COLOR_GRAY_666666"
+                        android:textSize="8sp"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="6dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="false"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/evaluation_module_anxious_index_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginVertical="15dp"
+                        android:text="@string/evaluation_module_anxious_index"
+                        android:textColor="@color/COLOR_BLACK_333333"
+                        android:textSize="16sp"
+                        />
+
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/anxious_index_linechart"
+                        android:layout_below="@+id/evaluation_module_anxious_index_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/evaluation_module_anxious_index_tv"
+                        android:text="@string/evaluation_module_score_number"
+                        android:textColor="@color/COLOR_GRAY_666666"
+                        android:textSize="8sp"
+                        />
+
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/evaluation_module_date"
+                        android:textColor="@color/COLOR_GRAY_666666"
+                        android:textSize="8sp"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="6dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="false"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/evaluation_module_report_comment"
+                        android:textColor="@color/COLOR_BLACK_333333"
+                        android:textSize="16sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="这是一段幸福指数阶段分析，针对的是当前默认的
+时间段的分析解说，会有具体的数据比对分析。
+当面默认的时间段是从第一次开始测评到最近一次
+测评幸福指数量表的时间段，时间段的选择只能在
+第一次和最近一次之间的时间。其余时间无数据不
+支持查看。"
+                        android:textColor="@color/COLOR_GRAY_666666"
+                        android:textSize="14sp"
+                        />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/evaluation_module_explore_myself_detail_consult"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/evaluation_module_blue_btn_bg_corner6"
+                android:text="@string/evaluation_module_click_consult"
+                android:textColor="@color/COLOR_white_ffffff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_soild_ffffff_r8"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/base_module_commit_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingVertical="14dp"
+        android:text="----"
+        android:textColor="@color/COLOR_BLACK_333333"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/base_module_commit_confirm_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:gravity="center"
+        android:paddingHorizontal="14dp"
+        android:text="----"
+        android:textColor="#ff333333"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/base_module_deviceline"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/COLOR_GRAY_DDDDDD" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/base_module_commit_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingVertical="11dp"
+            android:text="----"
+            android:textColor="@color/COLOR_GRAY_999999"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/base_module_commit_devideline"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/COLOR_GRAY_DDDDDD" />
+
+        <TextView
+            android:id="@+id/base_module_commit_dialog_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingVertical="11dp"
+            android:text="----"
+            android:textColor="@color/COLOR_BLUE_3E86FE"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

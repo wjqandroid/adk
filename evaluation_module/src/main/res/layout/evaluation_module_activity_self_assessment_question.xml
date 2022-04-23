@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/COLOR_white_ffffff"
+    android:orientation="vertical"
+    tools:context=".module.EvaluationGauge.activity.SelfAssessmentQuestionActivity">
+
+    <include layout="@layout/evaluation_module_self_assessment_toolbar" />
+    <RelativeLayout
+        android:id="@+id/normal_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dip10"
+            android:id="@+id/point_out_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/common_padding_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/point_out_layout_long"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/evaluation_module_tips_bg"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/dip10"
+                    android:visibility="visible">
+
+                    <com.visionvera.psychologist.c.widget.TagTextView
+                        android:id="@+id/point_out_content_long"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:textColor="@color/COLOR_white_ffffff"
+                        android:textSize="12sp"
+                        android:ellipsize="end"
+                        tools:text="这就是抑郁自评量表的一个文字内容介绍，具体是多少
+字数介绍，看后台研字数规定。这就是抑郁自评量表的一个文字内容介绍，具体是多少
+字数介绍，看后台研字数规定。这就是抑郁自评量表的一个文字内容介绍，具体是多少
+字数介绍，看后台研字数规定。" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <ImageView
+                    android:id="@+id/point_out_fold_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/evaluation_module_point_out_up" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/point_out_layout"
+            android:id="@+id/ll_question_title"
+            android:paddingHorizontal="@dimen/common_padding_horizontal"
+            android:background="@color/COLOR_white_ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_question_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/COLOR_GRAY_666666"
+                android:textSize="@dimen/dip15"
+                android:text="----" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_marginTop="@dimen/dip20"
+            android:id="@+id/evaluation_module_progress_bar_step"
+            android:layout_below="@+id/ll_question_title"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:indeterminateTint="@color/COLOR_BLUE_FF3E86FE"
+            android:max="10"
+            android:progressDrawable="@drawable/evaluation_module_progress_bar_bg" />
+
+        <com.visionvera.library.widget.NoScrollViewPager1
+            android:background="#F5F7FB"
+            android:id="@+id/evaluation_module_self_assessment_question_viewpager"
+            android:layout_below="@+id/evaluation_module_progress_bar_step"
+            android:layout_above="@+id/question_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/question_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/common_padding_horizontal"
+            android:layout_marginTop="@dimen/dip5"
+            android:layout_marginBottom="@dimen/dip20"
+            android:orientation="horizontal">
+
+            <Button
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/evaluation_module_fragment_last_question_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="42dp"
+                android:background="@drawable/evaluation_module_blue_btn_bg_last_corner4"
+                android:text="上一题"
+                android:textColor="@color/base_module_theme"
+                android:textSize="16sp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/evaluation_module_fragment_next_question_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="42dp"
+                android:background="@drawable/evaluation_module_blue_btn_bg_corner4"
+                android:text="下一题"
+                android:textColor="@color/COLOR_white_ffffff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

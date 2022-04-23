@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_layout"
+    android:background="#F5F5F5"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        style="@style/match_height_45"
+        android:background="@color/COLOR_white_ffffff">
+
+        <ImageView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="18dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/base_module_back" />
+
+        <RelativeLayout
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/evaluation_module_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip35"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dip5"
+            android:layout_marginRight="@dimen/dip9"
+            android:layout_toLeftOf="@+id/rl_service_search"
+            android:layout_toRightOf="@+id/iv_back"
+            android:background="@drawable/bg_soild_ebecf0_r5">
+
+            <ImageView
+                android:layout_width="@dimen/dip15"
+                android:layout_height="@dimen/dip15"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dip15"
+                android:src="@drawable/evaluation_module_search" />
+
+            <TextView
+                android:id="@+id/et_search"
+                style="@style/match_layout"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dip40"
+                android:gravity="center_vertical"
+                android:hint="搜索医生或医疗机构"
+                android:textColor="@color/COLOR_BLACK_333333"
+                android:textSize="@dimen/font14" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_service_search"
+            style="@style/wrap_match"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/iv_message"
+                style="@style/width_45_height_45"
+                android:paddingTop="@dimen/dip10"
+                android:paddingRight="@dimen/dip20"
+                android:paddingBottom="@dimen/dip10"
+                android:src="@drawable/evaluation_module_doc_black" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/match_layout"
+                android:background="@color/COLOR_WHITE_F4F3F4"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dip120"
+                    android:layout_marginLeft="@dimen/dip20"
+                    android:layout_marginTop="@dimen/dip15"
+                    android:layout_marginRight="@dimen/dip20"
+                    android:layout_marginBottom="@dimen/dip15"
+                    android:background="@drawable/evaluation_module_order_treatment_banner" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_evaluation_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dip210"
+                    android:background="@color/COLOR_WHITE_FFFFFF"
+                    android:paddingLeft="@dimen/dip10"
+                    android:paddingRight="@dimen/dip10" />
+
+                <RelativeLayout
+                    style="@style/match_height_45"
+                    android:layout_marginTop="@dimen/dip10"
+                    android:background="@color/COLOR_WHITE_FFFFFF">
+
+                    <LinearLayout
+                        style="@style/wrap_match"
+                        android:layout_marginLeft="@dimen/dip20"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/wrap_layout"
+                            android:layout_marginTop="@dimen/dip8"
+                            android:text="机构推荐"
+                            android:textColor="@color/COLOR_BLUE_FF3E86FE"
+                            android:textSize="@dimen/font14" />
+
+                        <View
+                            android:layout_width="@dimen/dip30"
+                            android:layout_height="@dimen/dip2"
+                            android:layout_marginTop="@dimen/dip7"
+                            android:background="@color/COLOR_BLUE_FF3E86FE" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:id="@+id/tv_refresh"
+                        style="@style/wrap_match"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dip10"
+                        android:paddingRight="@dimen/dip20"
+                        android:text="@string/evaluation_module_refresh_click"
+                        android:textColor="@color/COLOR_GRAY_999999"
+                        android:textSize="@dimen/font13" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/normal_view"
+                style="@style/match_wrap"
+                android:background="@color/COLOR_WHITE_FFFFFF" />
+
+            <include layout="@layout/evaluation_module_fragment_assessment_footer" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

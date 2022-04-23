@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_layout"
+    android:background="#F5F5F5"
+    android:focusable="true"
+    android:id="@+id/rl_container"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+</RelativeLayout>

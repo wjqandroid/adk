@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/match_layout"
+    android:background="@color/COLOR_WHITE_FFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        style="@style/match_height_45">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="18dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/base_module_back" />
+
+        <RelativeLayout
+            android:id="@+id/rl_titleAndArrow"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dip35"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:textStyle="bold"
+                    android:text="心理健康"
+                    android:textColor="#ff333333"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="@dimen/dip15"
+                    android:layout_height="@dimen/dip15"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dip15"
+                    android:src="@drawable/evaluation_module_arrow_down_black" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:background="#fff5f5f5"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:id="@+id/tv_search_match"
+        tools:text="为您找到擅长“心理健康”诊疗的医生共10位"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/normal_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_consultant"
+            style="@style/match_layout" />
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

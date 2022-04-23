@@ -1,0 +1,25 @@
+<resources>
+    <string name="account_module_app_name">account_module</string>
+    <string name="account_module_get_verification_code">发送验证码</string>
+    <string name="account_module_get_verification_code_error">验证码位数不对</string>
+    <string name="account_module_verification_code_not_empty">验证码不能为空</string>
+    <string name="account_module_phone_num_error">手机号位数不对</string>
+    <string name="account_module_password_not_empty">密码不能为空</string>
+    <string name="account_module_phone_num_not_empty">手机号不能为空</string>
+    <string name="account_module_verification_code_notice">请输入验证码</string>
+    <string name="account_module_verification_send_success">验证码发送成功</string>
+
+    <string name="account_module_warm_notice">温馨提示</string>
+    <string name="account_module_cancle">取消</string>
+    <string name="account_module_ok">确定</string>
+    <string name="account_module_password">密码</string>
+    <string name="account_module_please_input_password">请输入密码</string>
+    <string name="account_module_default_passsword">默认密码是123456，请登录及时修改</string>
+
+    <string name="account_module_phone_number">手机号</string>
+    <string name="account_module_please_input_phone_number">请输入手机号</string>
+    <string name="account_module_identity_id_not_empty">身份证号不能为空</string>
+    <string name="account_module_identity_id_error">身份证号位数不对</string>
+
+    <string name="account_module_please_check_protocol">请勾选协议</string>
+</resources>

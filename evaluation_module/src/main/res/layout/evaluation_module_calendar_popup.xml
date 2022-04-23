@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/COLOR_white_ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+       >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/evaluation_module_select_durtion_time"
+            android:textColor="@color/COLOR_BLACK_333333"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/evaluation_module_calendar_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="16dp"
+            android:src="@drawable/evaluation_module_ic_close" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/evaluation_module_current_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginVertical="10dp"
+                tools:text="----年--月"
+                android:textColor="@color/COLOR_BLACK_333333"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/evaluation_module_last_7_day_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="11dp"
+            android:paddingVertical="5dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/evaluation_module_last_7_day"
+            android:textColor="@drawable/evaluation_module_text_calendar_btn_selector"
+            android:background="@drawable/evaluation_module_calendar_btn_selector"
+            />
+
+        <TextView
+            android:id="@+id/evaluation_module_last_30_day_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="11dp"
+            android:paddingVertical="5dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/evaluation_module_last_30_day"
+            android:textColor="@drawable/evaluation_module_text_calendar_btn_selector"
+            android:background="@drawable/evaluation_module_calendar_btn_selector"
+            />
+
+    </LinearLayout>
+
+    <!--
+
+      min_year：最小的年份
+
+      -->
+
+    <com.haibin.calendarview.CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:calendar_height="40dp"
+        app:calendar_padding="4dp"
+        app:current_month_lunar_text_color="#CFCFCF"
+        app:current_month_text_color="#4f4f4f"
+        app:day_text_size="15sp"
+        app:max_select_range="-1"
+        app:min_select_range="3"
+        app:min_year="2004"
+        app:month_view="com.visionvera.psychologist.evaluation_module.widget.calendar.CustomRangeMonthView"
+        app:week_view="com.visionvera.psychologist.evaluation_module.widget.calendar.CustomRangeWeekView"
+        app:month_view_show_mode="mode_only_current"
+        app:other_month_text_color="#e1e1e1"
+        app:scheme_text="假"
+        app:scheme_text_color="#333"
+        app:scheme_theme_color="#333"
+        app:select_mode="range_mode"
+        app:selected_text_color="#fff"
+        app:selected_theme_color="@color/COLOR_BLUE_3E86FE"
+        app:week_background="#fff"
+        app:week_text_color="#111"
+        app:year_view_day_text_color="#333333"
+        app:year_view_day_text_size="9sp"
+        app:year_view_month_text_color="#00ff00"
+        app:year_view_month_text_size="20sp"
+        app:year_view_scheme_color="@color/COLOR_BLUE_3E86FE" />
+    <Button
+        android:id="@+id/evaluation_module_calendar_ok"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="@string/evaluation_module_ok"
+        android:textColor="@color/COLOR_white_ffffff"
+        android:textSize="16sp"
+        android:background="@drawable/evaluation_module_blue_btn_bg_corner4" />
+
+</LinearLayout>

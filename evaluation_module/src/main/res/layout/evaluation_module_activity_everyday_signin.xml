@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/COLOR_WHITE_F5F5F5">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/evaluation_module_everyday_signin_header" />
+
+    <ScrollView
+        android:id="@+id/normal_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="130dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="1dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:gravity="center_vertical">
+
+
+                            <TextView
+                                android:id="@+id/current_day"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:textColor="@color/COLOR_BLACK_333333"
+                                android:textSize="50sp"
+                                android:text="06" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/current_weekday"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/COLOR_BLACK_333333"
+                                    android:textSize="18sp"
+                                    android:text="周五" />
+
+                                <TextView
+                                    android:id="@+id/current_month_year"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/COLOR_GRAY_999999"
+                                    android:textSize="14sp"
+                                    android:text="十二月 2019" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <com.visionvera.psychologist.c.widget.StepView
+                            android:id="@+id/evaluation_module_sign_in_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:id="@+id/evaluation_module_sign_in_commit"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginHorizontal="12dp"
+                            android:background="@drawable/bg_logout"
+                            android:gravity="center"
+                            android:text="@string/evaluation_module_sign_in_now"
+                            android:textColor="@color/COLOR_white_ffffff"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_marginTop="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:gravity="center"
+                            android:text="@string/evaluation_module_sign_in_notice"
+                            android:textColor="@color/COLOR_GRAY_999999"
+                            android:textSize="12sp"
+                            />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="111dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:elevation="2dp"
+                    android:src="@drawable/evaluation_module_everyday_signin_iv" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="33dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    >
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="1dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/COLOR_GRAY_D1D2D6"
+                        android:layout_toLeftOf="@+id/evaluation_module_sign_in_rule_tv"
+                        />
+
+                    <TextView
+                        android:id="@+id/evaluation_module_sign_in_rule_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginHorizontal="10dp"
+                        android:text="@string/evaluation_module_sign_in_rule"
+                        android:textColor="@color/COLOR_GRAY_666666"
+                        android:textSize="14sp"
+                        />
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="1dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/COLOR_GRAY_D1D2D6"
+                        android:layout_toRightOf="@+id/evaluation_module_sign_in_rule_tv"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/evaluation_module_sign_in_rule_content"
+                    android:textColor="@color/COLOR_GRAY_999999"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/evaluation_module_back_white_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/evaluation_module_back_white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每日打卡"
+            android:textColor="#ffffffff"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

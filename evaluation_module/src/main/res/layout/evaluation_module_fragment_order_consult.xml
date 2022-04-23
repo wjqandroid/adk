@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/COLOR_white_ffffff">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/evaluation_module_fragment_order_consult_tab"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingHorizontal="@dimen/common_padding_horizontal"
+            app:tabBackground="@color/COLOR_white_ffffff"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/COLOR_white_ffffff"
+            app:tabIndicatorHeight="0dp"
+            app:tabMaxWidth="90dp"
+            app:tabMinWidth="@dimen/dip56"
+            app:tabMode="scrollable"
+            app:tabPaddingEnd="8dp"
+            app:tabPaddingStart="-1dp"
+            app:tabRippleColor="@android:color/transparent"
+            app:tabSelectedTextColor="#303133"
+            app:tabTextColor="#909399"></com.google.android.material.tabs.TabLayout>
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/evaluation_module_fragment_order_consult_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff5f5f5" />
+
+
+</LinearLayout>

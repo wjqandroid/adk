@@ -1,0 +1,256 @@
+<resources>
+    <string name="evaluation_module_app_name">@string/appName</string>
+    <string name="evaluation_module_tab_home">首页</string>
+    <string name="evaluation_module_tab_courselling">心理咨询</string>
+    <string name="evaluation_module_tab_knowledge_library">知识圈</string>
+    <string name="evaluation_module_tab_course">课程</string>
+    <string name="evaluation_module_tab_usercenter">我的</string>
+    <string name="evaluation_module_mytest">我的测评</string>
+    <string name="evaluation_module_myordertreat">我的诊疗</string>
+    <string name="evaluation_module_mycounsel">我的咨询</string>
+    <string name="evaluation_module_health_report">健康报告</string>
+    <string name="evaluation_module_psychological_test">心理测试</string>
+    <string name="evaluation_module_selected">精选测评</string>
+    <string name="evaluation_module_collects">我的收藏</string>
+    <string name="evaluation_module_depression_scale">抑郁自测量表</string>
+    <string name="evaluation_module_anxiety_scale">焦虑自测量表</string>
+    <string name="evaluation_module_test">测一测</string>
+    <string name="evaluation_module_refresh_click">换一换</string>
+    <string name="evaluation_module_more_click">更多</string>
+    <string name="evaluation_module_no_collect">您还未收藏任何测评量表</string>
+    <string name="evaluation_module_bottom_line">我是有底线的</string>
+    <string name="evaluation_module_pending_test">待测评</string>
+    <string name="evaluation_module_tested">已测评</string>
+    <string name="evaluation_module_expired">已过期</string>
+    <string name="evaluation_module_test_start">开始测试</string>
+    <string name="evaluation_module_check_result">查看结果</string>
+    <string name="evaluation_module_test_again">再测一次</string>
+    <string name="evaluation_module_re_apply">重新申请</string>
+    <string name="evaluation_module_re_apply_notice">该测评已过期，是否重新发起测评？审核通过在待测列表中找到该测评。</string>
+    <string name="evaluation_module_test_again_notice">再次测评需要消耗15个心豆，是否继续再次测评？</string>
+
+    <string name="evaluation_module_dont_empty">不能为空</string>
+
+    <string name="evaluation_module_warm_notice">温馨提示</string>
+    <string name="evaluation_module_cancle">取消</string>
+    <string name="evaluation_module_ok">确定</string>
+    <string name="evaluation_module_search">搜索</string>
+    <string name="evaluation_module_assessment_search">搜索咨询师或咨询机构</string>
+    <string name="evaluation_module_search_consultant">搜索咨询师</string>
+
+
+    <string name="evaluation_module_commit_success">恭喜您！提交成功</string>
+    <string name="evaluation_module_commit_success_notice">您的预约申请已提交，请耐心等待咨询师处理！</string>
+    <string name="evaluation_module_back_mainpage">返回首页</string>
+    <string name="evaluation_module_perfect_information">完善个人信息</string>
+    <string name="evaluation_module_to_perfect_information">去完善信息</string>
+    <string name="evaluation_module_perfect_information_notice">想要获取更多的心豆，请先完善 你的个人信息</string>
+    <string name="evaluation_module_perfect_test_information_notice">想要查看测评结果，请先完善你的个人信息</string>
+    <string name="evaluation_module_test_results">测试结果</string>
+    <string name="evaluation_module_result_analysis">结果分析</string>
+    <string name="evaluation_module_commit_confirm">提交确认</string>
+    <string name="evaluation_module_commit_to_login">去登录</string>
+    <string name="evaluation_module_commit_confirm_notice">您还未登录，需登录/注册后才能查看测评结果，是否确定去登录/注册？</string>
+    <string name="evaluation_module_not_login">您还未登录，需登录/注册后才能继续使用，是否确定去登录/注册？</string>
+    <string name="evaluation_module_test_score">本次测试结果分数是: </string>
+    <string name="evaluation_module_score">分</string>
+    <string name="evaluation_module_test_result">本次测试结果:</string>
+    <string name="evaluation_module_goal_oriented">目标导向:</string>
+    <string name="evaluation_module_result_oriented">成果导向:</string>
+    <string name="evaluation_module_to_login">去登录</string>
+    <string name="evaluation_module_open_push">开启推送通知</string>
+    <string name="evaluation_module_receive_push">及时接收心理测评等信息推送</string>
+    <string name="evaluation_module_open_now">立即开启</string>
+
+    <string name="evaluation_module_heart_bean">心豆</string>
+    <string name="evaluation_module_logout">退出登录</string>
+    <string name="evaluation_module_exit">退出账号</string>
+    <string name="evaluation_module_my_message">我的消息</string>
+    <string name="evaluation_module_feedback">意见反馈</string>
+    <string name="evaluation_module_setting_center">设置中心</string>
+    <string name="evaluation_module_msg_center">消息中心</string>
+
+
+    <string name="evaluation_module_account_safety">账号安全</string>
+    <string name="evaluation_module_new_message">新消息通知</string>
+    <string name="evaluation_module_about_us">关于我们</string>
+    <string name="evaluation_module_about">软件版本</string>
+    <string name="evaluation_module_setting">设置中心</string>
+    <string name="evaluation_module_account_phonenumber">账号手机号</string>
+    <string name="evaluation_module_account_password">账户密码</string>
+    <string name="evaluation_module_could_change">可修改</string>
+
+    <string name="evaluation_module_please_check_protocol">请勾选协议</string>
+    <string name="evaluation_module_crash">死机</string>
+    <string name="evaluation_module_caton">卡顿</string>
+    <string name="evaluation_module_whiteblack">黑/白屏</string>
+    <string name="evaluation_module_fallback">闪退</string>
+    <string name="evaluation_module_display_error">界面显示异常</string>
+    <string name="evaluation_module_other">其他</string>
+    <string name="evaluation_module_problem_desc">问题/意见描述</string>
+    <string name="evaluation_module_problem_hint_desc">请填写10字以上的问题描述，以便我们更好的帮助您解决问题</string>
+    <string name="evaluation_module_max_picture">上传问题截图，最多4张（选填）</string>
+    <string name="evaluation_module_contract_infomation">联系方式（选填）</string>
+    <string name="evaluation_module_contract_infomation_hint">填写您的手机号或邮箱，便于我们与您联系</string>
+    <string name="evaluation_module_forget_old_password">忘记旧密码？</string>
+    <string name="evaluation_module_password_tip">6-12位字符需含大小写字母</string>
+    <string name="evaluation_module_commit">提交</string>
+    <string name="evaluation_module_welcome_degree">欢迎度</string>
+    <string name="evaluation_module_time">时间</string>
+    <string name="evaluation_module_price">价格</string>
+    <string name="evaluation_module_collection_success">收藏成功</string>
+    <string name="evaluation_module_input_information">填写资料</string>
+    <string name="evaluation_module_input_information_notice">完善资料获得更多心豆</string>
+    <string name="evaluation_module_input_age">填写个人年龄</string>
+    <string name="evaluation_module_input_job">填写职业</string>
+    <string name="evaluation_module_input_company">个人邮箱</string>
+    <string name="evaluation_module_id_card_number">本人身份证号</string>
+    <string name="evaluation_module_input_nickname">填写您的昵称</string>
+
+    <!--健康报告-->
+    <string name="evaluation_module_more_report">更多报告</string>
+    <string name="evaluation_module_more_analysis">更多分析</string>
+    <string name="evaluation_module_more_explore">更多探索</string>
+    <string name="evaluation_module_trend_analysis">趋势分析</string>
+    <string name="evaluation_module_explore_myself">探索自我</string>
+
+    <string name="evaluation_module_psychological_evaluation_health_report">心理测评健康报告</string>
+    <string name="evaluation_module_explore_notice">发现内心深处的我</string>
+    <string name="evaluation_module_none_now">暂无</string>
+    <string name="evaluation_module_click_consult">点击咨询</string>
+    <string name="evaluation_module_report_comment">报告点评</string>
+
+    <string name="evaluation_module_happiness_index">幸福指数</string>
+    <string name="evaluation_module_depressed_index">抑郁指数</string>
+    <string name="evaluation_module_anxious_index">焦虑指数</string>
+    <string name="evaluation_module_score_number">分数</string>
+    <string name="evaluation_module_date">日期</string>
+
+    <string name="evaluation_module_change_password">修改密码</string>
+    <string name="evaluation_module_complete">完成</string>
+    <string name="evaluation_module_password_notice">密码必须同时包含大写和小写字母</string>
+    <string name="evaluation_module_password_not_sample">两次新密码不一致</string>
+    <string name="evaluation_module_checknumber_already_send">6位数字验证码已发送</string>
+
+    <string name="evaluation_module_select_durtion_time">选择时间段</string>
+    <string name="evaluation_module_last_7_day">最近7天</string>
+    <string name="evaluation_module_last_30_day">最近30天</string>
+
+
+    <string name="evaluation_module_wechat">微信</string>
+    <string name="evaluation_module_friendcircle">朋友圈</string>
+    <string name="evaluation_module_qq_zone">QQ空间</string>
+    <string name="evaluation_module_sina_micro_blog">新浪微博</string>
+
+    <string name="evaluation_module_edit_information">编辑信息</string>
+    <string name="evaluation_module_locate_industry">职业</string>
+    <string name="evaluation_module_be_good_at_field">擅长领域</string>
+    <string name="evaluation_module_service_type">服务类型</string>
+    <string name="evaluation_module_video_consult">视频咨询</string>
+    <string name="evaluation_module_voice_consult">语音咨询</string>
+    <string name="evaluation_module_word_consult">文字咨询</string>
+    <string name="evaluation_module_outline_consult">线下门诊</string>
+    <string name="evaluation_module_recommend">推荐</string>
+    <string name="evaluation_module_order_interval">预约时段</string>
+    <string name="evaluation_module_order_consult">预约咨询</string>
+    <string name="evaluation_module_select_time">选择时间</string>
+    <string name="evaluation_module_select_type">选择类型</string>
+    <string name="evaluation_module_service_network">选择服务网点</string>
+    <string name="evaluation_module_upload_appendix">上传附件</string>
+    <string name="evaluation_module_input_remark">情况备注（选填）</string>
+    <string name="evaluation_module_input_remark_information">描述您的实际情况</string>
+    <string name="evaluation_module_sign_in_now">立即签到</string>
+    <string name="evaluation_module_sign_in_notice">本周签满7天，可得最高30个心豆</string>
+    <string name="evaluation_module_sign_in_rule">签到规则</string>
+    <string name="evaluation_module_sign_in_rule_content">1、签到当日获得的心豆实时累加，不清零；\n2、一周7天连续签到可获得最高30个心豆，如有漏签则不能获得本周连续签满心豆奖励，但不影响单日签到所获心豆累计；\n3、签到获得的心豆可以用来进行心理量表测评使用,具体的使用消耗规则按照心理量表的详细规则为准；\n4、签到时需要保持登录状态，领取的心豆会绑定到个人账户。</string>
+
+    <string name="evaluation_module_appointment">预约诊疗</string>
+    <string name="evaluation_module_assessment">心理测评</string>
+    <string name="evaluation_module_emergency_help">心理援助</string>
+    <string name="evaluation_module_checkin_daily">每日打卡</string>
+    <string name="evaluation_module_suggest">为你推荐</string>
+
+    <string name="evaluation_module_mental_health">心理健康</string>
+    <string name="evaluation_module_area">地区</string>
+    <string name="evaluation_module_filter">筛选</string>
+    <string name="evaluation_module_default">默认</string>
+    <string name="evaluation_module_most_appointment">预约最多</string>
+    <string name="evaluation_module_new_add">最新加入</string>
+    <string name="evaluation_module_order_success">预约成功</string>
+    <string name="evaluation_module_remark">备注</string>
+    <string name="evaluation_module_consult_type">咨询形式</string>
+    <string name="evaluation_module_consult_times">咨询次数</string>
+    <string name="evaluation_module_consult_time">咨询时间</string>
+    <string name="evaluation_module_consult_order_time">订单时间</string>
+    <string name="evaluation_module_counselor">咨询师</string>
+    <string name="evaluation_module_order_consult_commit_success_notice">您的预约申请已提交，请耐心等待咨询师处理！</string>
+    <string name="evaluation_module_order_consult_commit_success">恭喜您！提交成功</string>
+
+    <string name="evaluation_module_apply_list">申请列表</string>
+    <string name="evaluation_module_invite_list">受邀列表</string>
+
+    <string name="evaluation_module_to_be_accept">待受理</string>
+    <string name="evaluation_module_to_be_received">待接诊</string>
+    <string name="evaluation_module_already_cancel">已取消</string>
+    <string name="evaluation_module_already_complete">已完成</string>
+    <string name="evaluation_module_already_reject">已驳回</string>
+    <string name="evaluation_module_already_abolist">已作废</string>
+    <string name="evaluation_module_daifukuan">待付款</string>
+
+    <string name="evaluation_module_phone">电话</string>
+
+    <string name="evaluation_module_type">咨询方式</string>
+    <string name="evaluation_module_sex">性别</string>
+    <string name="evaluation_module_age">年龄</string>
+    <string name="evaluation_module_reset">重置</string>
+    <string name="evaluation_module_unlimited">不限</string>
+
+    <string name="evaluation_module_order_consult_detail">预约详情</string>
+    <string name="evaluation_module_order_consult_cancel_order">取消预约</string>
+    <string name="evaluation_module_open_video_consult">开启视频咨询</string>
+    <string name="evaluation_module_open_word_consult">开启文字咨询</string>
+    <string name="evaluation_module_accept_consult">接受咨询</string>
+    <string-array name="evaluation_module_chinese_week_string_array">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string name="evaluation_module_not_develop">此功能暂未开放</string>
+
+    <string name="evaluation_module_input_sex_birthday_idcard">您需要补全:性别,出生日期,身份证号才可以预约</string>
+    <string name="evaluation_module_not_come_durtion_time">没到咨询时间</string>
+    <string name="evaluation_module_come_beyond_durtion_time">超过咨询时间</string>
+    <string name="evaluation_module_please_select_sex">请选择性别</string>
+    <string name="evaluation_module_sex_dont_change">性别不能修改</string>
+    <string name="evaluation_module_yuyueshiduan">【工作日全天】【周末全天】\n工作日及周末9:00-22:00均可安排，具体咨询时间需要通过双方协商。需要提前预约，新来访按正式预约的先后顺序安排可咨询时间段；每次视频咨询时长为50分钟。</string>
+
+    <!--支付宝使用-->
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+
+
+    <string name="app_name">音视频通话</string>
+    <string name="app_toast_login_success">登录成功</string>
+    <string name="app_toast_login_fail">登录IM失败，所有功能不可用[%d]%s</string>
+    <string name="working">正在运行中</string>
+    <string name="self_userId">您的userId:</string>
+    <string name="tips_search">搜索添加已注册用户\n\t\t\t以发起通话</string>
+    <string name="toast_video_call">视频呼叫:%s</string>
+    <string name="toast_voice_call">语音呼叫:%s</string>
+    <string name="toast_not_call_myself">不能呼叫自己</string>
+    <string name="call_self_format">您的userId: %s</string>
+    <string name="audio_call">语音通话</string>
+    <string name="video_call">视频通话</string>
+    <string name="btn_cancel">取消</string>
+    <string name="search_call_hint">搜索 userId</string>
+    <string name="user_id">用户名</string>
+    <string name="hint_user_id">请输入登录的userId</string>
+    <string name="btn_login">登录</string>
+</resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/COLOR_white_ffffff"
+        android:paddingHorizontal="@dimen/common_padding_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip44">
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="#ff666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:textColor="#ff222222"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvSubmit"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:textColor="#ff3ca7ff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/common_padding_horizontal"
+        android:layout_marginVertical="@dimen/dip10"
+        android:text="修改心理健康服务平台密码后可以通过手机号+密码进行登录心理健康服务平台"
+        android:textColor="@color/common_hint_text"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:background="@color/COLOR_white_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip48"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/common_padding_horizontal">
+
+        <TextView
+            android:id="@+id/accout_phone"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="账号手机号"
+            android:textColor="@color/COLOR_BLACK_222222"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/user_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/accout_phone"
+            android:gravity="center_vertical|end"
+            android:textColor="@color/COLOR_BLACK_333333"
+            android:textSize="14sp"
+            tools:text="17812345678" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F2F1F6" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip48"
+        android:background="@color/COLOR_white_ffffff"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/common_padding_horizontal">
+
+        <TextView
+            android:id="@+id/old_password_title"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="旧密码"
+            android:textColor="@color/COLOR_BLACK_222222"
+            android:textSize="14sp" />
+
+        <EditText
+            android:gravity="center_vertical|end"
+            android:id="@+id/old_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-1dp"
+            android:layout_toRightOf="@+id/old_password_title"
+            android:background="@null"
+            android:hint="请填写旧密码"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:textColor="@color/COLOR_BLACK_333333"
+            android:textColorHint="#B6B6B6"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F2F1F6" />
+
+    <RelativeLayout
+        android:background="@color/COLOR_white_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip48"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/common_padding_horizontal">
+
+        <TextView
+            android:id="@+id/new_password_title"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="新密码"
+            android:textColor="@color/COLOR_BLACK_222222"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/new_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/new_password_title"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="请填写新密码"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:textColor="#F83F3B"
+            android:textColorHint="#B6B6B6"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F2F1F6" />
+
+    <RelativeLayout
+        android:background="@color/COLOR_white_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip48"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/common_padding_horizontal">
+
+        <TextView
+            android:id="@+id/again_new_password_title"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="确认密码"
+            android:textColor="@color/COLOR_BLACK_222222"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/again_new_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/again_new_password_title"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="请再次填写新密码"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:textColor="#F83F3B"
+            android:textColorHint="#B6B6B6"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F2F1F6" />
+
+    <LinearLayout
+        android:layout_marginHorizontal="@dimen/common_padding_horizontal"
+        android:layout_marginTop="@dimen/dip10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/evaluation_module_password_tip"
+            android:textColor="#ff999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evaluation_module_forget_old_password"
+            android:textColor="@color/base_module_theme"
+            android:textSize="14sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+</LinearLayout>

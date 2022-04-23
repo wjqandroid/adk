@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/COLOR_white_ffffff"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#F3F3F3"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/evaluation_module_word_pic"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="文字诊疗"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#F3F3F3" />
+
+
+    <TextView
+        android:id="@+id/evaluation_module_voice_consult"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="语音咨询"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/evaluation_module_offline_consult"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="语音诊疗"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/evaluation_module_video_consult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="@color/COLOR_white_ffffff"
+            android:gravity="center"
+            android:text="视频诊疗"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(推荐)"
+            android:textColor="@color/COLOR_ORANGE_FF782E"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F3F3F3" />
+
+
+    <TextView
+        android:id="@+id/evaluation_module_consult_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/COLOR_BLACK_333333"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

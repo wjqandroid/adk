@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="450dp"
+    android:background="@color/COLOR_white_ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rlTab1"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp">
+
+            <LinearLayout
+                android:paddingVertical="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+
+                <TextView
+                    android:id="@+id/tvAvailable"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可用优惠券（2)"
+                    android:textColor="@color/COLOR_BLACK_333333"
+                    android:textSize="@dimen/font14" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivTab1Indicator"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/evaluation_module_bg_tab_indicator"
+                android:layout_width="20dp"
+                android:layout_height="3dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlTab2"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp">
+
+            <LinearLayout
+                android:paddingVertical="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+
+                <TextView
+                    android:id="@+id/tvNotAvailable"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不可用优惠券（5）"
+                    android:textColor="@color/COLOR_GRAY_666666"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivTab2Indicator"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/evaluation_module_bg_tab_indicator"
+                android:layout_width="20dp"
+                android:layout_height="3dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:paddingVertical="@dimen/dip10"
+        android:paddingHorizontal="@dimen/common_padding_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您已选中优惠券1张，共可抵用¥10.00"
+        android:textColor="#ff333333"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:background="#F5F7FB"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:layout_marginTop="@dimen/dip20"
+                android:layout_marginBottom="@dimen/dip10"
+                android:id="@+id/srl_availableTicket"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_availableTicket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/dip10"
+                android:layout_marginTop="@dimen/dip20"
+                android:id="@+id/srl_not_availableTicket"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_not_availableTicket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        </FrameLayout>
+
+        <TextView
+            android:layout_marginBottom="@dimen/dip20"
+            android:layout_marginHorizontal="@dimen/common_padding_horizontal"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/tv_ok"
+            android:gravity="center"
+            android:background="@drawable/account_module_bg_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip40"
+            android:text="确定"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/dip15" />
+    </LinearLayout>
+
+
+</LinearLayout>

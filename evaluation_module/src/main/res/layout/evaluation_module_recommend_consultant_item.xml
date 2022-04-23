@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/match_wrap"
+    android:background="@color/COLOR_WHITE_FFFFFF"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="horizontal">
+
+    <com.visionvera.library.widget.view.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_width="@dimen/dip50"
+        android:layout_height="@dimen/dip50"
+        android:layout_marginLeft="@dimen/dip15"
+        android:layout_marginTop="@dimen/dip15"
+        android:src="@drawable/base_module_doctor_header" />
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:layout_marginLeft="@dimen/dip12"
+        android:layout_marginRight="@dimen/dip15"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/wrap_layout"
+            android:layout_marginTop="@dimen/dip15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/wrap_layout"
+                android:text="张豆豆"
+                android:textColor="@color/COLOR_BLACK_000000"
+                android:textSize="@dimen/font16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/wrap_layout"
+                android:layout_marginLeft="@dimen/dip20"
+                tools:text="主任医师"
+                android:textColor="@color/COLOR_BLACK_000000"
+                android:textSize="@dimen/font14" />
+
+
+            <TextView
+                android:id="@+id/tv_suggest"
+                style="@style/wrap_layout"
+                android:layout_marginLeft="@dimen/dip5"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/evaluation_module_solid_1aff0000_r2"
+                android:paddingLeft="@dimen/dip5"
+                android:paddingTop="@dimen/dip1"
+                android:paddingRight="@dimen/dip5"
+                android:paddingBottom="@dimen/dip1"
+                android:text="推荐"
+                android:visibility="gone"
+                android:textColor="@color/COLOR_RED_FF4E4E"
+                android:textSize="@dimen/font10" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/wrap_layout"
+            android:layout_marginTop="@dimen/dip10"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="二级心理咨询师、中美高级精神分析班学员"
+            android:textColor="@color/COLOR_GRAY_999999"
+            android:textSize="@dimen/font14" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/wrap_layout"
+            android:layout_marginTop="@dimen/dip10"
+            android:text="#慢性压力   #成长创伤   #适应障碍"
+            android:textColor="@color/COLOR_BLUE_3E86FE"
+            android:textSize="@dimen/font12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dipHalf"
+            android:layout_marginTop="@dimen/dip15"
+            android:background="@color/COLOR_GRAY_EEEEEE" />
+    </LinearLayout>
+
+
+</LinearLayout>

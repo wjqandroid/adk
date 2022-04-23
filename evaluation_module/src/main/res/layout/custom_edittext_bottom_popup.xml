@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:paddingHorizontal="@dimen/common_padding_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginVertical="@dimen/common_padding_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论给"
+            android:textColor="@color/common_text2"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvPersonName"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文章作者"
+            android:textColor="@color/common_text"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+
+    <EditText
+        android:textColorHint="#999999"
+        android:textColor="@color/common_text"
+        android:textSize="12sp"
+        android:background="@null"
+        android:id="@+id/et_comment"
+        android:maxLength="200"
+        android:minLines="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入你要发表的评论" />
+
+    <RelativeLayout
+        android:layout_marginVertical="@dimen/common_padding_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/tv_publish"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布"
+            android:textColor="@color/base_module_theme"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

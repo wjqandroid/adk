@@ -1,0 +1,171 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseModule_BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textAllCaps">false</item>
+        <!-- Customize your theme here. -->
+        <!--Appbar背景色-->
+        <item name="colorPrimary">@color/base_module_colorPrimary</item>
+        <!--状态栏颜色-->
+        <item name="colorPrimaryDark">@color/base_module_colorPrimaryDark</item>
+        <!--控制各个控件被选中时的颜色,默认的光标等-->
+        <item name="colorAccent">@color/base_module_colorAccent</item>
+        <!-- 设置activity切换动画 -->
+        <!--        <item name="android:windowAnimationStyle">@style/BaseModule_AnimationActivity</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+    </style>
+
+
+    <!--Activity 切换效果-->
+    <style name="BaseModule_AnimationActivity" parent="@android:style/Animation.Activity">
+        <!--打开Activity时，新进入Activity执行的动画-->
+        <item name="android:activityOpenEnterAnimation">@anim/open_second_enter</item>
+        <!--打开Activity时，原Activity执行的动画-->
+        <item name="android:activityOpenExitAnimation">@anim/open_first_exit</item>
+        <!--退出Activity时，退出的Activity执行的动画-->
+        <item name="android:activityCloseExitAnimation">@anim/close_second_exit</item>
+        <!--退出Activity时，重新显示的Activity执行的动画-->
+        <item name="android:activityCloseEnterAnimation">@anim/close_first_enter</item>
+    </style>
+
+
+    <!--宽铺满高铺满-->
+    <style name="match_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--宽铺满高自定义-->
+    <style name="match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match_height_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dip1</item>
+    </style>
+
+    <style name="match_height_45">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dip45</item>
+    </style>
+
+    <style name="match_height_40">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dip40</item>
+    </style>
+
+    <style name="match_height_48">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dip48</item>
+    </style>
+
+    <!--宽自适应高自定义-->
+    <style name="wrap_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--宽自定义高自适应-->
+    <style name="width_80_wrap">
+        <item name="android:layout_width">@dimen/dip80</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--宽自定义高自定义-->
+    <style name="width_5_height_5">
+        <item name="android:layout_width">@dimen/dip5</item>
+        <item name="android:layout_height">@dimen/dip5</item>
+    </style>
+
+    <style name="width_16_height_16">
+        <item name="android:layout_width">@dimen/dip16</item>
+        <item name="android:layout_height">@dimen/dip16</item>
+    </style>
+
+    <style name="width_45_height_45">
+        <item name="android:layout_width">@dimen/dip45</item>
+        <item name="android:layout_height">@dimen/dip45</item>
+    </style>
+
+    <style name="width_70_height_70">
+        <item name="android:layout_width">@dimen/dip70</item>
+        <item name="android:layout_height">@dimen/dip70</item>
+    </style>
+
+    <style name="width_88_height_88">
+        <item name="android:layout_width">@dimen/dip88</item>
+        <item name="android:layout_height">@dimen/dip88</item>
+    </style>
+
+    <style name="width_110_height_110">
+        <item name="android:layout_width">@dimen/dip110</item>
+        <item name="android:layout_height">@dimen/dip110</item>
+    </style>
+
+    <style name="width_200_height_48">
+        <item name="android:layout_width">@dimen/dip200</item>
+        <item name="android:layout_height">@dimen/dip48</item>
+    </style>
+
+    <!--宽自适应高铺满-->
+    <style name="wrap_match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--测评结果分数样式-->
+    <style name="style_text_score_type" parent="wrap_layout">
+        <item name="android:textSize">@dimen/font18</item>
+        <item name="android:textColor">@color/COLOR_GRAY_666666</item>
+    </style>
+
+    <!--测评结果分数样式-->
+    <style name="style_text_score_content" parent="wrap_layout">
+        <item name="android:textSize">@dimen/font18</item>
+        <item name="android:textColor">@color/COLOR_ORANGE_FF782E</item>
+    </style>
+
+
+
+    <!--轮播控件-->
+    <declare-styleable name="Banner">
+        <attr name="delay_time" format="integer" />
+        <attr name="scroll_time" format="integer" />
+        <attr name="is_auto_play" format="boolean" />
+        <attr name="title_background" format="color|reference" />
+        <attr name="title_textcolor" format="color" />
+        <attr name="title_textsize" format="dimension" />
+        <attr name="title_height" format="dimension" />
+        <attr name="indicator_width" format="dimension" />
+        <attr name="indicator_height" format="dimension" />
+        <attr name="indicator_margin" format="dimension" />
+        <attr name="indicator_drawable_selected" format="reference" />
+        <attr name="indicator_drawable_unselected" format="reference" />
+        <attr name="banner_layout" format="reference" />
+        <attr name="banner_default_image" format="reference" />
+        <attr name="image_scale_type" format="enum">
+            <enum name="center" value="0" />
+            <enum name="center_crop" value="1" />
+            <enum name="center_inside" value="2" />
+            <enum name="fit_center" value="3" />
+            <enum name="fit_end" value="4" />
+            <enum name="fit_start" value="5" />
+            <enum name="fit_xy" value="6" />
+            <enum name="matrix" value="7" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="base_module_i_circle_imageview">
+        <attr name="base_module_circle_corner" format="integer" />
+    </declare-styleable>
+
+    <!--设置-全屏-->
+    <style name="NoTitleFullscreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:navigationBarColor">@color/black</item> <!-- 底部导航栏的颜色值 -->
+    </style>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_star"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="@dimen/dip20"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/img_five_stars_grey" />
+
+    <ImageView
+        android:id="@+id/iv_2"
+        android:layout_width="@dimen/dip20"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:src="@mipmap/img_five_stars_grey" />
+
+    <ImageView
+        android:id="@+id/iv_3"
+        android:layout_width="@dimen/dip20"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:src="@mipmap/img_five_stars_grey" />
+
+    <ImageView
+        android:id="@+id/iv_4"
+        android:layout_width="@dimen/dip20"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:src="@mipmap/img_five_stars_grey" />
+
+    <ImageView
+        android:id="@+id/iv_5"
+        android:layout_width="@dimen/dip20"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:src="@mipmap/img_five_stars_grey" />
+</LinearLayout>

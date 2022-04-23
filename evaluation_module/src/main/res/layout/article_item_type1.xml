@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_article_item"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/ivCoverImage"
+        tools:src="@drawable/no_banner"
+        android:layout_width="match_parent"
+        android:layout_height="170dp" />
+
+    <LinearLayout
+        android:paddingHorizontal="@dimen/common_padding_horizontal"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_gravity="center_vertical"
+            android:layout_marginVertical="6dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvTitle"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="如何治疗幼儿急性寻麻疹？"
+                android:textColor="@color/common_text"
+                android:textSize="17sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingHorizontal="@dimen/common_padding_horizontal"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="5"
+                android:ellipsize="end"
+                android:text="寻麻疹俗称风机块、风疙瘩、风疹团，在儿童中很常见，多由过敏引发。急性发作，全身有瘙痒及大小不一的风团发生。风团可相互融合成大片皮损，或成地图..."
+                android:textColor="@color/common_text2"
+                android:textSize="13sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:paddingHorizontal="@dimen/common_padding_horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/ivAuthorHead"
+            tools:src="@drawable/base_module_default_man"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:src="@drawable/base_module_default_man"
+            app:civ_border_width="0dp"
+            app:civ_border_color="@color/COLOR_white_ffffff" />
+
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/tvAuthorName"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:maxWidth="80dp"
+            android:layout_height="18dp"
+            android:text="李明"
+            android:textColor="#ff555555"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvIdentifyStatus"
+            android:gravity="center"
+            android:paddingHorizontal="2dp"
+            android:background="@drawable/bg_gradient_79eab7_51c8b5_r4"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已认证账号"
+            android:textColor="@color/COLOR_white_ffffff"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="3dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/llLike"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivLike"
+                    android:background="@drawable/ic_unlike"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+
+                <TextView
+                    android:id="@+id/tvLikeCount"
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24"
+                    android:textColor="#ff999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="3dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:id="@+id/llCollect"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivCollect"
+                    android:background="@drawable/ic_article_uncollect"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+
+                <TextView
+                    android:id="@+id/tvCollectCount"
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24"
+                    android:textColor="#ff999999"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

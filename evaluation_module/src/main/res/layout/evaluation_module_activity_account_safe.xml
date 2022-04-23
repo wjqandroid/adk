@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.usercenter.activity.AccountSafeActivity">
+
+    <include layout="@layout/base_module_common_toolbar" />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dip10"
+        android:background="@color/COLOR_white_ffffff"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/rl_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip48">
+
+        <TextView
+            style="@style/wrap_layout"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dip16"
+            android:text="个人信息"
+            android:textColor="@color/COLOR_BLACK_333333"
+            android:textSize="@dimen/font14" />
+
+        <ImageView
+            android:layout_width="@dimen/dip10"
+            android:layout_height="@dimen/dip10"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dip16"
+            android:background="@drawable/evaluation_module_arrow_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1"
+        android:layout_marginLeft="@dimen/dip16"
+        android:background="@color/COLOR_WHITE_F2F1F6" />
+
+    <com.visionvera.library.widget.view.ItemView1
+        android:id="@+id/account_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip48"
+
+        app:base_module_leftText_itemview1="@string/evaluation_module_account_phonenumber" />
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip48"
+        android:orientation="horizontal">
+
+        <com.visionvera.library.widget.view.ItemView1
+            android:id="@+id/account_password"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:base_module_leftText_itemview1="@string/evaluation_module_account_password"
+            app:base_module_rightText_itemview1="@string/evaluation_module_could_change"
+            android:layout_height="@dimen/dip48"
+            app:base_module_rightTextColor_itemview1="@color/COLOR_GRAY_999999"
+            app:base_module_bottomLine_itemview1="false"
+            />
+        
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/evaluation_module_arrow_right"/>
+
+    </LinearLayout>
+    
+  
+
+
+</LinearLayout>

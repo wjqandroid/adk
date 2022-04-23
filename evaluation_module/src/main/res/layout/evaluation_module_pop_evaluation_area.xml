@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_wrap"
+    android:background="@color/COLOR_WHITE_FFFFFF"
+    android:orientation="horizontal">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_evaluation_province"
+        android:layout_width="@dimen/dip110"
+        android:layout_height="@dimen/dip400"
+        android:background="@color/COLOR_GRAY_FFF0F4F8"
+        android:paddingLeft="@dimen/dip28" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_evaluation_city"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip400"
+        android:paddingLeft="@dimen/dip40" />
+
+</LinearLayout>

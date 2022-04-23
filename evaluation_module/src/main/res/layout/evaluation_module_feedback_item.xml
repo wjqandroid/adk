@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_wrap"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_caton"
+        style="@style/match_height_40">
+
+        <TextView
+            android:id="@+id/tv_feedback_title"
+            style="@style/evaluation_module_style_text_feedback" />
+
+        <ImageView
+            android:id="@+id/iv_feedback_select"
+            style="@style/evaluation_module_style_img_feedback" />
+    </RelativeLayout>
+
+    <View style="@style/evaluation_module_style_line_feedback" />
+</LinearLayout>

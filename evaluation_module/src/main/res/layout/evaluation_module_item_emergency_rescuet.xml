@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/dip8"
+    android:layout_marginTop="@dimen/dip10"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_institutions_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ff333333"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_work_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip8"
+            android:text=""
+            android:textColor="#ff333333"
+            android:textSize="14sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_work_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip8"
+            android:text=""
+            android:textColor="#ff333333"
+            android:textSize="14sp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_weight="4">
+
+        <ImageView
+            android:id="@+id/iv_call"
+            android:padding="@dimen/dip15"
+            android:layout_gravity="center"
+            android:src="@mipmap/img_home_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

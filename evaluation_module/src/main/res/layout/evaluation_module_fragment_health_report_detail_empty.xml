@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="6dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/evaluation_module_health_report_detail_empty_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:gravity="center"
+                android:textColor="@color/COLOR_BLACK_333333"
+                android:textSize="20sp"
+                tools:text="【  写给刚刚到来的11月  】" />
+
+            <ImageView
+                android:id="@+id/evaluation_module_health_report_detail_empty_image"
+                android:layout_width="210dp"
+                android:layout_height="190dp"
+                android:layout_below="@+id/evaluation_module_health_report_detail_empty_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/evaluation_module_health_report_detail_empty_1" />
+
+            <TextView
+                android:id="@+id/evaluation_module_health_report_detail_empty_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/evaluation_module_health_report_detail_empty_image"
+                android:layout_marginHorizontal="17dp"
+                android:layout_marginVertical="30dp"
+                android:text="       抑郁只是我们众多情绪中的一种，它会自然地
+出现，也会自然地离开。只不过有时它的一些影响
+会让我们“舍不得”让它离开，例如：当处于抑郁情
+绪中时，我们可能会得到更多人的关心和爱护，也
+就不想摆脱这种抑郁的情绪。
+       但我们真的不需要通过这样的方式去寻求照顾，
+我们可以主动去跟别人建立关系，去跟好朋友诉说
+情绪，或者跟家人外出旅游玩耍一下。摆脱抑郁情
+绪的方式有很多，我们不需要自己一个人单打独斗，
+像个“孤胆英雄”一样。"
+                android:textColor="@color/COLOR_GRAY_666666"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>

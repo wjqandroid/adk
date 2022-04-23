@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_wrap"
+    android:background="@color/COLOR_WHITE_FFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/match_height_45">
+
+        <LinearLayout
+            android:id="@+id/ll_selects"
+            style="@style/wrap_match"
+            android:layout_marginLeft="@dimen/dip20"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_selects_text"
+                style="@style/wrap_layout"
+                android:layout_marginTop="@dimen/dip8"
+                android:text="@string/evaluation_module_selected"
+                android:textColor="@color/COLOR_BLUE_FF3E86FE"
+                android:textSize="@dimen/font14" />
+
+            <View
+                android:id="@+id/view_selects_indic"
+                android:layout_width="@dimen/dip30"
+                android:layout_height="@dimen/dip2"
+                android:layout_marginTop="@dimen/dip7"
+                android:background="@color/COLOR_BLUE_FF3E86FE" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_collects"
+            style="@style/wrap_match"
+            android:layout_marginLeft="@dimen/dip20"
+            android:layout_toRightOf="@id/ll_selects"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_collects_text"
+                style="@style/wrap_layout"
+                android:layout_marginTop="@dimen/dip8"
+                android:text="@string/evaluation_module_collects"
+                android:textColor="@color/COLOR_GRAY_666666"
+                android:textSize="@dimen/font14" />
+
+            <View
+                android:id="@+id/view_collects_indic"
+                android:layout_width="@dimen/dip30"
+                android:layout_height="@dimen/dip2"
+                android:layout_marginTop="@dimen/dip7"
+                android:background="@color/COLOR_BLUE_FF3E86FE"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/tv_refresh"
+            style="@style/wrap_match"
+            android:visibility="visible"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dip10"
+            android:paddingRight="@dimen/dip20"
+            android:text="换一换"
+            android:textColor="@color/COLOR_GRAY_999999"
+            android:textSize="@dimen/font13" />
+
+        <TextView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/tv_more"
+            style="@style/wrap_match"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dip10"
+            android:paddingRight="@dimen/dip20"
+            android:text="@string/evaluation_module_more_click"
+            android:textColor="@color/COLOR_GRAY_999999"
+            android:textSize="@dimen/font13"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <com.visionvera.library.widget.NoScrollViewPager
+        android:id="@+id/vp_evaluation_type"
+        android:layout_width="match_parent"
+        android:layout_height="235dp" />
+
+
+</LinearLayout>

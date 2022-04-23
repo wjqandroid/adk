@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_depression"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/dip5">
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:maxLines="1"
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新版本v2.2.1心理健康症状自评测量表上线咯～"
+        android:textColor="#ff666666"
+        android:textSize="13sp" />
+
+</LinearLayout>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.counselling.activity.OrderPayActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/COLOR_WHITE_F5F5F5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip240"
+                android:background="@mipmap/icon_bg_consul"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rlTitleBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginTop="@dimen/dip24">
+
+                        <ImageView
+                            android:id="@+id/rl_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:paddingHorizontal="18dp"
+                            android:src="@drawable/base_module_back" />
+
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:maxLength="12"
+                            android:maxLines="1"
+                            android:textColor="#333333"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:text="标题" />
+
+                        <ImageView
+                            android:id="@+id/evaluation_module_counselor_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="20dp"
+                            android:src="@drawable/evaluation_module_share"
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/rlTitleBar"
+                        android:layout_marginTop="41dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/common_padding_horizontal">
+
+
+                        <com.visionvera.library.widget.view.CircleImageView
+                            android:id="@+id/evaluation_module_counselor_detail_header"
+                            android:paddingVertical="@dimen/dip10"
+                            android:layout_width="@dimen/dip80"
+                            android:layout_height="@dimen/dip80"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/base_module_default_man" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dip15"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tvName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:lines="1"
+                                    android:textColor="@color/COLOR_BLACK_333333"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    tools:text="" />
+<!--一级咨询师-->
+                                <TextView
+                                    android:id="@+id/tvTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center"
+                                    android:layout_marginLeft="@dimen/dip8"
+                                    android:background="@drawable/bg_solid_ffffff_r11"
+                                    android:paddingHorizontal="@dimen/dip7"
+                                    android:paddingVertical="@dimen/dip2"
+                                    android:text=""
+                                    android:textColor="@color/base_module_white"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+<!--北京沐悦心理咨询机构-->
+                            <TextView
+                                android:id="@+id/evaluation_module_advisory_body"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dip4"
+                                android:textColor="#ff666666"
+                                android:textSize="14sp"
+                                tools:text="" />
+<!--#婚姻家庭-->
+                            <TextView
+                                android:id="@+id/tvTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dip8"
+                                android:textColor="#ff3e86fe"
+                                android:textSize="12sp"
+                                tools:text="" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_toRightOf="@+id/evaluation_module_counselor_detail_header"
+                    android:background="@color/COLOR_white_ffffff"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/common_padding_horizontal"
+                    android:paddingVertical="@dimen/common_padding_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="预约时间"
+                        android:textColor="@color/COLOR_BLACK_333333"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+<!--2020年7月29日  18:00-20:00-->
+                    <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dip16"
+                        android:text=""
+                        android:textColor="#ff666666"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/evaluation_module_counselor_detail_header"
+                    android:background="@color/COLOR_white_ffffff"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/common_padding_horizontal"
+                    android:paddingVertical="@dimen/common_padding_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="预约服务"
+                        android:textColor="@color/COLOR_BLACK_333333"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+<!--文字咨询-->
+                    <TextView
+                        android:id="@+id/tvType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dip16"
+                        android:text=""
+                        android:textColor="#ff666666"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/evaluation_module_counselor_detail_header"
+                    android:background="@color/COLOR_white_ffffff"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/common_padding_horizontal"
+                    android:paddingVertical="@dimen/common_padding_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="问题类型"
+                        android:textColor="@color/COLOR_BLACK_333333"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_ProblemType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dip16"
+                        android:text="焦虑抑郁"
+                        android:textColor="#ff666666"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/evaluation_module_counselor_detail_header"
+                    android:background="@color/COLOR_white_ffffff"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/common_padding_horizontal"
+                    android:paddingVertical="@dimen/common_padding_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="附件"
+                        android:textColor="@color/COLOR_BLACK_333333"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewFujian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/evaluation_module_counselor_detail_header"
+                    android:background="@color/COLOR_white_ffffff"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/common_padding_horizontal"
+                    android:paddingVertical="@dimen/common_padding_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="备注"
+                        android:textColor="@color/COLOR_BLACK_333333"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvBeizhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dip16"
+                        android:textColor="#ff666666"
+                        android:textSize="14sp"
+                        tools:text="" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/COLOR_white_ffffff"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/common_padding_horizontal"
+        android:paddingVertical="@dimen/common_padding_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总计："
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+<!-- ¥600.00-->
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff7b33"
+                android:textSize="22sp"
+                tools:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="@dimen/dip118"
+            android:layout_height="@dimen/dip42"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/evaluation_module_blue_btn_bg_r21"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="提交订单"
+            android:textColor="#ffffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

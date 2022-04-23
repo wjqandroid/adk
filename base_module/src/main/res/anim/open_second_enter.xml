@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--打开Activity时，新进入Activity执行的动画-->
+    <!--从右侧向左平移-->
+    <translate
+        android:duration="350"
+        android:fromXDelta="100%"
+        android:toXDelta="0%" />
+    <!--缩放动画-->
+    <scale
+        android:duration="350"
+        android:fromXScale="0.8"
+        android:fromYScale="0.8"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.0"
+        android:toYScale="1.0" />
+</set>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_wrap"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/COLOR_WHITE_F4F3F4"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:background="@color/white"
+        style="@style/match_wrap"
+        android:paddingVertical="@dimen/common_padding_horizontal"
+        android:orientation="vertical">
+
+        <com.visionvera.library.widget.banner.Banner
+            android:layout_marginHorizontal="@dimen/common_padding_horizontal"
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingBottom="@dimen/dip10"
+        android:background="@color/COLOR_WHITE_FFFFFF"
+        tools:listitem="@layout/evaluation_module_head_item"
+        tools:itemCount="3"
+        android:id="@+id/rv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--实时热门-->
+    <LinearLayout
+        android:paddingVertical="@dimen/dip10"
+        android:background="@color/COLOR_WHITE_FFFFFF"
+        android:paddingHorizontal="@dimen/common_padding_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dip33"
+            android:layout_height="@dimen/dip28"
+            android:background="@drawable/evaluation_module_shishiremen"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:background="@color/COLOR_WHITE_F4F3F4"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp" />
+
+        <ViewFlipper
+            android:id="@+id/flipper_shishiremen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:autoStart="true"
+            android:background="@android:color/white"
+            android:flipInterval="3000"
+            android:inAnimation="@anim/push_up_in"
+            android:outAnimation="@anim/push_up_out" />
+
+    </LinearLayout>
+    <!--精选测评-->
+    <LinearLayout
+        android:layout_marginTop="@dimen/dip10"
+        android:paddingVertical="@dimen/common_padding_horizontal"
+        android:paddingHorizontal="@dimen/common_padding_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/COLOR_WHITE_FFFFFF"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/evaluation_module_ic_hot_ceping"
+                    android:layout_width="@dimen/dip24"
+                    android:layout_height="@dimen/dip24" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dip5"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="精选测评"
+                    android:textColor="@color/COLOR_BLACK_333333"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:textColor="#5579A9"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/dip5"
+                    android:src="@drawable/evaluation_mudule_home_icon_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHotCeping"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <!--精彩课程-->
+    <LinearLayout
+        android:layout_marginTop="@dimen/dip10"
+        android:paddingVertical="@dimen/common_padding_horizontal"
+        android:paddingHorizontal="@dimen/common_padding_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/COLOR_WHITE_FFFFFF"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/evaluation_module_live_selected"
+                    android:layout_width="@dimen/dip24"
+                    android:layout_height="@dimen/dip24" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dip5"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="精选课程"
+                    android:textColor="@color/COLOR_BLACK_333333"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:textColor="#5579A9"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/dip5"
+                    android:src="@drawable/evaluation_mudule_home_icon_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHotLive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <!--精选文章-->
+    <LinearLayout
+        android:layout_marginTop="@dimen/dip10"
+        android:paddingVertical="@dimen/common_padding_horizontal"
+        android:paddingHorizontal="@dimen/common_padding_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/COLOR_WHITE_FFFFFF"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/evaluation_module_knoledge_library_selected"
+                    android:layout_width="@dimen/dip24"
+                    android:layout_height="@dimen/dip24" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dip5"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="精选文章"
+                    android:textColor="@color/COLOR_BLACK_333333"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:textColor="#5579A9"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/dip5"
+                    android:src="@drawable/evaluation_mudule_home_icon_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHotArticle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

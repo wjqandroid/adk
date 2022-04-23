@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="base_module_itemview1">
+        <attr name="base_module_leftText_itemview1" format="reference|string" />
+        <attr name="base_module_rightText_itemview1" format="reference|string" />
+        <attr name="base_module_rightTextColor_itemview1" format="reference|color"/>
+        <!--是否显示下划线，默认是显示-->
+        <attr name="base_module_bottomLine_itemview1" format="boolean" />
+    </declare-styleable>
+
+    <!--自定义圆形头像-->
+    <declare-styleable name="base_module_CircleImageView">
+        <attr name="base_module_border_width" format="dimension" />
+        <attr name="base_module_border_color" format="color" />
+        <attr name="base_module_border_overlay" format="boolean" />
+    </declare-styleable>
+
+</resources>

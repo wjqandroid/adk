@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--https://www.jianshu.com/p/4c8dda36ab42-->
+    <!--解决这个报错：onErrorjava.net.UnknownServiceException: CLEARTEXT communication to 58.30.9.142 not permitted by network security policy-->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

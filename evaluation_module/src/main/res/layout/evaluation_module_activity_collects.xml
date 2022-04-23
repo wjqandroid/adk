@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_layout"
+    android:background="@color/COLOR_WHITE_F4F3F4"
+    android:orientation="vertical">
+
+    <include layout="@layout/evaluation_module_custom_title_simple" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/collect_refresh"
+        style="@style/match_layout"
+        android:background="@color/COLOR_WHITE_F5F5F5"
+        android:layout_marginTop="@dimen/dip54">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_collects"
+            style="@style/match_layout" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_no_collect"
+        style="@style/wrap_layout"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/dip134"
+            android:layout_height="@dimen/dip100"
+            android:src="@drawable/evaluation_module_nodata" />
+
+        <TextView
+            style="@style/wrap_layout"
+            android:layout_marginTop="@dimen/dip10"
+            android:text="@string/evaluation_module_no_collect"
+            android:textColor="@color/COLOR_GRAY_999999"
+            android:textSize="@dimen/font12" />
+    </LinearLayout>
+</RelativeLayout>

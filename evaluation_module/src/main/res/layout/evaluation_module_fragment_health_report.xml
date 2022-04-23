@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/match_layout"
+    android:background="@color/COLOR_WHITE_FFFEFE"
+    android:orientation="vertical">
+
+    <include layout="@layout/evaluation_module_custom_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/evaluation_module_health_report_bg"
+                android:scaleType="fitXY"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="17dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/evaluation_module_score_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="3天前"
+                        android:textColor="@color/color_ff6502"
+                        android:textSize="14sp"
+                        android:paddingHorizontal="11dp"
+                        android:paddingVertical="5dp"
+                        android:background="@drawable/evaluation_module_bg_white_corner"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/evaluation_module_score_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/evaluation_module_score_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="75"
+                            android:textColor="@color/COLOR_white_ffffff"
+                            android:textSize="56sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="分"
+                            android:textColor="@color/COLOR_white_ffffff"
+                            android:textSize="16sp"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/evaluation_module_none_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/evaluation_module_none_now"
+                        android:textColor="@color/COLOR_white_ffffff"
+                        android:textSize="56sp"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="幸福测评指数"
+                        android:textColor="@color/COLOR_white_ffffff"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/evaluation_module_sweet_advice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        tools:text="贴心建议：您比大多数人感觉自己幸福，真是个开心的结果，继续保持，向阳而生"
+                        android:textColor="@color/COLOR_white_ffffff"
+                        android:textSize="14sp"
+                        />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardPreventCornerOverlap="false"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="17dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="19dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/evaluation_module_health_report_icon"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/evaluation_module_health_report"
+                                android:textColor="#ff333333"
+                                android:textSize="16sp"
+                                />
+                            <TextView
+                                android:id="@+id/evaluation_module_more_health_report"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/evaluation_module_more_report"
+                                android:textColor="@color/COLOR_GRAY_666666"
+                                android:textSize="12sp"
+                                />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/evaluation_module_health_report_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/evaluation_module_health_report_card_bg">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="14dp"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/evaluation_module_health_report_month"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    tools:text="十月份"
+                                    android:textColor="@color/COLOR_white_ffffff"
+                                    android:textSize="20sp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/evaluation_module_psychological_evaluation_health_report"
+                                    android:textColor="@color/COLOR_white_ffffff"
+                                    android:textSize="20sp"
+                                    />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/evaluation_module_psychological_evaluation_health_report_notice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            tools:text="十月份心理测评健康报告。"
+                            android:textColor="@color/COLOR_GRAY_666666"
+                            android:textSize="16sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardPreventCornerOverlap="false"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="17dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="19dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/evaluation_module_trend_analysis_icon"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/evaluation_module_trend_analysis"
+                                android:textColor="#ff333333"
+                                android:textSize="16sp"
+                                />
+                            <TextView
+                                android:id="@+id/evaluation_module_more_trend_analysis_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/evaluation_module_more_analysis"
+                                android:textColor="@color/COLOR_GRAY_666666"
+                                android:textSize="12sp"
+                                />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/evaluation_module_trend_analysis_card_bg"/>
+
+
+                        <TextView
+                            android:id="@+id/evaluation_module_trend_analysis_notice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            tools:text="心理测评健康趋势分析。"
+                            android:textColor="@color/COLOR_GRAY_666666"
+                            android:textSize="16sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardPreventCornerOverlap="false"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="17dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="19dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/evaluation_module_explore_icon"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/evaluation_module_explore_myself"
+                                android:textColor="#ff333333"
+                                android:textSize="16sp"
+                                />
+                            <TextView
+                                android:id="@+id/evaluation_module_more_explore_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/evaluation_module_more_explore"
+                                android:textColor="@color/COLOR_GRAY_666666"
+                                android:textSize="12sp"
+                                />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/evaluation_module_explore_card_bg">
+
+                            <LinearLayout
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="14dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="14dp"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/evaluation_module_explore_myself"
+                                    android:textColor="@color/COLOR_white_ffffff"
+                                    android:textSize="20sp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/evaluation_module_explore_notice"
+                                    android:textColor="@color/COLOR_white_ffffff"
+                                    android:textSize="20sp"
+                                    />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/evaluation_module_explore_myself_notice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            tools:text="探索自我，发现内心深处的我。"
+                            android:textColor="@color/COLOR_GRAY_666666"
+                            android:textSize="16sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

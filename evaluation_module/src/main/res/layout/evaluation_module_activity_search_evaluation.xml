@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.search.activity.SearchEvaluationActivity">
+
+    <LinearLayout
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="@dimen/common_padding_horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/base_module_white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/evaluation_module_bg_search"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/evaluation_module_search_gray"
+                android:layout_width="@dimen/dip20"
+                android:layout_height="@dimen/dip20" />
+
+            <EditText
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:id="@+id/et_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#999999"
+                android:background="@null"
+                android:textSize="14sp"
+                android:textColorHint="#999999"
+                android:gravity="center_vertical"
+                android:hint="搜索"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginStart="@dimen/dip10"
+                android:id="@+id/iv_delete"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:visibility="invisible"
+                android:src="@drawable/evaluation_module_close" />
+        </LinearLayout>
+
+        <TextView
+            android:paddingHorizontal="10dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tv_search"
+            android:textSize="14sp"
+            android:textColor="@color/base_module_theme"
+            android:text="搜索"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

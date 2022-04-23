@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.visionvera.psychologist.c">
+    <!-- 腾讯离线推送 -->
+    <!-- 【必须】 移动推送 TPNS SDK VIP版本所需权限 -->
+    <permission
+        android:name="com.visionvera.psychologist.c"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.visionvera.psychologist.c" /> <!-- 【必须】 移动推送 TPNS SDK 所需权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 【常用】 移动推送 TPNS SDK所需权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/yue_logo1"
+        android:label="@string/evaluation_module_app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/BaseModule_BaseAppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon, android:theme , android:label">
+        <activity android:name=".module.home.activity.EmergencyRescueActivity"></activity>
+        <activity android:name=".widget.tencentIm.voicevideo.VoiceVideoCallActivity" />
+        <activity android:name=".module.usercenter.activity.ApplySettledActivity" />
+        <activity android:name=".module.counselling.activity.SelectServiceAddressActivity" />
+        <activity android:name=".module.counselling.activity.LookEvaluationActivity" />
+        <activity android:name=".module.home.activity.WebBrowseActivity" />
+        <activity
+            android:name=".module.MainActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="myhost"
+                    android:path="/main"
+                    android:port="1024"
+                    android:scheme="myscheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".module.EvaluationGauge.activity.SelfAssessmentCommitActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".app.DemoMainActivity" />
+        <activity
+            android:name=".module.EvaluationGauge.activity.SelfAssessmentQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.EvaluationGauge.activity.SelfAssessmentGaugeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.search.activity.SearchEvaluationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.EvaluationGauge.activity.EvaluationResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.collect.MyCollectsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.usercenter.activity.MessageCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.usercenter.activity.AccountSafeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.usercenter.activity.ChangePassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.usercenter.activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.usercenter.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.usercenter.activity.FeedBackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".module.usercenter.activity.EditInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".utils.photo.MyTakePhotoActivity"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".module.healthreport.activity.HealthReportListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.healthreport.activity.ExploreMySelfListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.healthreport.activity.ExploreMySelfDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.healthreport.activity.HealthReportDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.healthreport.activity.HealthReportDetailEmptyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.healthreport.activity.TrendAnalysisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.counselling.activity.CounselorDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.counselling.activity.OrderConsultActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".module.counselling.activity.OrderConsultSelectTimeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.EveryDaySignInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.counselling.activity.OrderConsultSuccessActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.counselling.activity.OrderConsultListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.counselling.activity.OrderConsultDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.allevaluation.fragment.AllEvaluationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.healthreport.HealthReoprtActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.myevaluation.MyEvaluationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.counselling.activity.SearchCounselorActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".module.ordertreatment.activity.NewOrderTreatmentPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.ordertreatment.activity.NewOrderTreatmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.counselling.activity.AllEvaluationListActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="17719940" />
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="cf8GIFTEtzXrXTWOYdeAZZMl" />
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="Q5RZhsCRkQBIE2RxN2XfkDu7CwZL187u" />
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- 正式环境下走这个回调 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent101847855" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".module.ordertreatment.activity.OrderTreatmentMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.ordertreatment.activity.OrderTreatmentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.ordertreatment.activity.TypeRecommendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.ordertreatment.activity.SubjectListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.ordertreatment.activity.SubjectRecommendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.ordertreatment.activity.NewOrderTreatmentDetailActivity"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name=".module.ordertreatment.activity.OrderSelectTimeActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="adjustPan" /> -->
+        <activity
+            android:name=".module.ordertreatment.activity.SearchDoctorActivity"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name=".module.ordertreatment.activity.OrderTreatmentSuccessActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".module.ordertreatment.activity.OrderTreatmentListDetailActivity" -->
+        <!-- android:screenOrientation="portrait" /> &lt;!&ndash; value的值填写你在友盟后台申请的应用Appkey &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".module.ordertreatment.activity.NewOrderTreatmentListDetailActivity" -->
+        <!-- android:screenOrientation="portrait" /> &lt;!&ndash; value的值填写你在友盟后台申请的应用Appkey &ndash;&gt; -->
+        <activity
+            android:name=".widget.tencentIm.textchat.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5cf09dc20cafb211c000057e" /> <!-- 适配华为（huawei）刘海屏 -->
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" /> <!-- 适配小米（xiaomi）刘海屏 -->
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".module.counselling.activity.CounsellingMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.counselling.activity.OrderPayActivity"
+            android:exported="true" />
+        <activity
+            android:name=".module.counselling.activity.OrderPayActivity2"
+            android:exported="true" />
+        <activity android:name=".module.usercenter.activity.InputNickNameActivity" />
+        <activity android:name=".module.knowledge_library.activity.ArticleDetailActivity" />
+        <activity android:name=".module.knowledge_library.activity.WriteArticleActivity" />
+
+        <provider
+            android:name=".utils.BuglyFileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="name,authorities,exported,grantUriPermissions">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="name,resource" />
+        </provider>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleFullscreen"
+            tools:replace="android:theme" />
+        <activity android:name=".module.knowledge_library.activity.DraftListActivity" /> <!-- 新浪分享 -->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- 腾讯离线推送 -->
+<!--        <activity-->
+<!--            android:name="com.tencent.android.tpush.TpnsActivity"-->
+<!--            android:exported="true"-->
+<!--            android:launchMode="singleInstance"-->
+<!--            android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
+<!--            tools:ignore="WrongManifestParent"-->
+<!--            tools:node="remove">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="${applicationId}.OPEN_TPNS_ACTIVITY" />-->
+
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--            </intent-filter>-->
+<!--            <intent-filter>-->
+<!--                <data-->
+<!--                    android:host="com.visionvera.psychologist.c"-->
+<!--                    android:scheme="tpns" />-->
+
+<!--                <action android:name="android.intent.action.VIEW" />-->
+
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--            </intent-filter>-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+<!--        <activity-->
+<!--            android:name="com.tencent.android.tpush.InnerTpnsActivity"-->
+<!--            android:exported="false"-->
+<!--            android:launchMode="singleInstance"-->
+<!--            android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
+<!--            tools:ignore="WrongManifestParent"-->
+<!--            tools:node="remove">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="${applicationId}.OPEN_TPNS_ACTIVITY_V2" />-->
+
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--            </intent-filter>-->
+<!--            <intent-filter>-->
+<!--                <data-->
+<!--                    android:host="com.visionvera.psychologist.c"-->
+<!--                    android:scheme="stpns" />-->
+
+<!--                <action android:name="android.intent.action.VIEW" />-->
+
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--            </intent-filter>-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action" />-->
+<!--            </intent-filter>-->
+<!--        </activity> &lt;!&ndash; 【必须】 信鸽receiver广播接收 &ndash;&gt;-->
+<!--        <receiver-->
+<!--            android:name="com.tencent.android.tpush.XGPushReceiver"-->
+<!--            android:exported="false"-->
+<!--            android:process=":xg_vip_service"-->
+<!--            tools:ignore="WrongManifestParent"-->
+<!--            tools:node="remove">-->
+<!--            <intent-filter android:priority="0x7fffffff">-->
+
+<!--                &lt;!&ndash; 【必须】 信鸽SDK的内部广播 &ndash;&gt;-->
+<!--                <action android:name="com.tencent.android.xg.vip.action.SDK" />-->
+<!--                <action android:name="com.tencent.android.xg.vip.action.INTERNAL_PUSH_MESSAGE" />-->
+<!--                <action android:name="com.tencent.android.xg.vip.action.ACTION_SDK_KEEPALIVE" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+    </application>
+
+</manifest>

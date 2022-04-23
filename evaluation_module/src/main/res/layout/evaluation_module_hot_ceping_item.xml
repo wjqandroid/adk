@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_depression"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="242dp"
+    android:layout_height="116dp">
+
+    <com.visionvera.library.widget.ICircleImageView
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/evaluation_module_place_holder1_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:base_module_circle_corner="6"
+        tools:src="@drawable/no_banner" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_marginStart="@dimen/common_padding_horizontal"
+        android:layout_marginTop="@dimen/dip23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="心理健康自评量表"
+        android:textColor="#ff3362a1"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/common_padding_horizontal"
+        android:layout_marginTop="@dimen/dip60"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测一测"
+            android:textColor="#5579A9"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_marginLeft="@dimen/dip5"
+            android:src="@drawable/evaluation_module_arrow_right_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>

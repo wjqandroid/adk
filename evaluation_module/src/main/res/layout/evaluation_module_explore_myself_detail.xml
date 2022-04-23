@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/COLOR_WHITE_F5F5F5"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_module_common_toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/evaluation_module_explore_myself_detail_iv"
+                android:layout_width="268dp"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:src="@drawable/evaluation_module_explore_myself_detail" />
+
+            <LinearLayout
+                android:id="@+id/evaluation_module_explore_myself_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/evaluation_module_explore_myself_detail_iv"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="-20dp"
+                android:background="@drawable/evaluation_module_white_btn_bg_corner6"
+                android:orientation="vertical"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="16dp">
+
+                <TextView
+                    android:id="@+id/evaluation_module_explore_myself_detail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ENFP"
+                    android:textColor="#ff333333"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="特点"
+                    android:textColor="#ff333333"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/evaluation_module_explore_myself_detail_feature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="冒险特质的记者型、奋斗者、追梦人、劝告者"
+                    android:textColor="#ff333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="解析"
+                    android:textColor="#ff333333"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/evaluation_module_explore_myself_detail_analyze"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="1、充满热忱、活力充沛、聪明的、富想象力的，视生命充满机会但期能得自他人肯定与支持。\n2、几乎能达成所有有兴趣的事。\n3、对难题很快就有对策并能对有困难的人施予援手。\n4、依赖能改善的能力而无须预作规划准备。\n5、为达目的常能找出强制自己为之的理由。\n6、即兴执行者。"
+                    android:textColor="#ff333333"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/evaluation_module_explore_myself_detail_consult"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_below="@+id/evaluation_module_explore_myself_detail_layout"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/evaluation_module_blue_btn_bg_corner6"
+                android:text="@string/evaluation_module_click_consult"
+                android:textColor="@color/COLOR_white_ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_depression"
+    style="@style/match_wrap"
+    android:paddingLeft="@dimen/dip20"
+    android:paddingRight="@dimen/dip20">
+
+    <com.visionvera.library.widget.ICircleImageView
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/evaluation_module_place_holder1_iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip100"
+        android:scaleType="fitXY"
+        tools:src="@drawable/no_banner" />
+
+    <TextView
+        android:id="@+id/tv_depression_name"
+        style="@style/evaluation_module_depression_tv_style"
+        android:layout_toLeftOf="@+id/tv_depression_number" />
+
+    <TextView
+        style="@style/evaluation_module_depression_tv1_style"
+        android:text="@string/evaluation_module_test" />
+
+    <TextView
+        android:id="@+id/tv_depression_number"
+        style="@style/evaluation_module_depression_tv2_style"
+        android:text="已测" />
+</RelativeLayout>

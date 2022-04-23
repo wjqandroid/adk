@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff5f5f5"
+    android:orientation="vertical"
+    tools:ignore="ResourceName">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip44"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingLeft="18dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/base_module_back" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/rl_back"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                tools:text="返回" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="申请入驻" />
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:text="提交" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="@dimen/dip10"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:src="@mipmap/img_apply">
+
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip18"
+                android:text="申请入驻"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip7"
+                android:text="抑粤心安是视联动力旗下子公司视联医疗，打造的预防、干预、诊疗全面心理服务体系的心理健康服务APP。\n\n为个人、组织，及政府，提供全方位的细致、专业的心理服务，
+\n\n粤心安精心挑选合作者，严格遵守咨询伦理、不断精进、热爱分享的原则和理念。希望更专业的心理健康服务可以成为我们每个中国人日常身心保健当中的一部分。
+\n\n如果你也认同我们，欢迎加入我们的大家庭。"
+                android:textColor="#ff666666"
+                android:textSize="13sp" />
+
+
+            <LinearLayout
+                android:id="@+id/btn_apply"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip50"
+                android:layout_marginTop="@dimen/dip30"
+                android:layout_marginBottom="@dimen/dip45"
+                android:background="@drawable/evaluation_module_blue_r25"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip5"
+                    android:text="申请入驻"
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="下载服务端APP"
+                    android:textColor="#ffffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

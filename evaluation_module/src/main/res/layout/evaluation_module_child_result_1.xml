@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_result_title1"
+        style="@style/wrap_layout"
+        android:textColor="@color/COLOR_BLACK_333333"
+        android:textSize="@dimen/font18"
+        android:textStyle="bold"
+        tools:text="标题1"
+        />
+
+    <TextView
+        android:id="@+id/tv_result_title2"
+        style="@style/wrap_layout"
+        android:layout_marginTop="@dimen/dip8"
+        android:textColor="@color/COLOR_BLACK_333333"
+        android:textSize="@dimen/font14"
+        android:textStyle="bold"
+        tools:text="标题2"/>
+
+    <TextView
+        android:id="@+id/tv_result_content2"
+        style="@style/match_wrap"
+        android:layout_marginTop="@dimen/dip5"
+        android:lineSpacingExtra="@dimen/dip2"
+        android:textColor="@color/COLOR_GRAY_666666"
+        android:textSize="@dimen/font14"
+        tools:text="内容2"/>
+
+    <TextView
+        android:id="@+id/tv_result_title3"
+        style="@style/wrap_layout"
+        android:layout_marginTop="@dimen/dip8"
+        android:textColor="@color/COLOR_BLACK_333333"
+        android:textSize="@dimen/font14"
+        android:textStyle="bold"
+        tools:text="标题3"/>
+
+    <TextView
+        android:id="@+id/tv_result_content3"
+        style="@style/match_wrap"
+        android:layout_marginTop="@dimen/dip5"
+        android:lineSpacingExtra="@dimen/dip2"
+        android:textColor="@color/COLOR_GRAY_666666"
+        android:textSize="@dimen/font14"
+        tools:text="内容3"/>
+
+    <TextView
+        android:id="@+id/tv_result_title4"
+        style="@style/wrap_layout"
+        android:layout_marginTop="@dimen/dip8"
+        android:textColor="@color/COLOR_BLACK_333333"
+        android:textSize="@dimen/font14"
+        android:textStyle="bold"
+        tools:text="标题4"/>
+
+    <TextView
+        android:id="@+id/tv_result_content4"
+        style="@style/match_wrap"
+        android:layout_marginTop="@dimen/dip5"
+        android:lineSpacingExtra="@dimen/dip2"
+        android:textColor="@color/COLOR_GRAY_666666"
+        android:textSize="@dimen/font14"
+        tools:text="内容4"/>
+
+    <TextView
+        android:id="@+id/tv_result_title5"
+        style="@style/wrap_layout"
+        android:layout_marginTop="@dimen/dip8"
+        android:textColor="@color/COLOR_BLACK_333333"
+        android:textSize="@dimen/font14"
+        android:textStyle="bold"
+        tools:text="标题8"/>
+
+    <TextView
+        android:id="@+id/tv_result_content5"
+        style="@style/match_wrap"
+        android:layout_marginTop="@dimen/dip5"
+        android:lineSpacingExtra="@dimen/dip2"
+        android:textColor="@color/COLOR_GRAY_666666"
+        android:textSize="@dimen/font14"
+        tools:text="标题9"/>
+
+
+</LinearLayout>

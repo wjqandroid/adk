@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_layout"
+    android:background="@color/COLOR_WHITE_F4F3F4"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        style="@style/match_height_45"
+        android:background="@color/white">
+
+        <ImageView
+            android:paddingVertical="@dimen/dip10"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingHorizontal="@dimen/common_padding_horizontal"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_back"
+            android:src="@drawable/base_module_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_toRightOf="@id/iv_back"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/rl_evaluation_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip35"
+            android:layout_centerVertical="true"
+
+            android:layout_toLeftOf="@+id/iv_message"
+            android:background="@drawable/evaluation_module_bg_search">
+
+            <ImageView
+                android:layout_width="@dimen/dip15"
+                android:layout_height="@dimen/dip15"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dip15"
+                android:src="@drawable/evaluation_module_search" />
+
+            <TextView
+                android:textColorHint="#A0A5B0"
+                style="@style/wrap_layout"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dip40"
+                android:hint="@string/evaluation_module_assessment_search"
+                android:textColor="@color/COLOR_GRAY_666666"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:paddingVertical="@dimen/dip5"
+            android:paddingHorizontal="@dimen/common_padding_horizontal"
+            android:layout_centerVertical="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/iv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/evaluation_module_ic_zixun_order" />
+
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartrefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/match_layout"
+                    android:background="@color/COLOR_WHITE_F4F3F4"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_centerInParent="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dip120"
+                            android:layout_marginHorizontal="@dimen/common_padding_horizontal"
+                            android:layout_marginTop="@dimen/dip15"
+                            android:layout_marginBottom="@dimen/dip15"
+                            android:background="@drawable/evaluation_module_banner" />
+                    </RelativeLayout>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_evaluation_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/COLOR_WHITE_FFFFFF"
+                        android:paddingLeft="@dimen/dip8"
+                        android:paddingRight="@dimen/dip8" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="@dimen/dip10"
+                    android:id="@+id/normal_view"
+                    style="@style/match_wrap"
+                    android:background="@color/COLOR_WHITE_FFFFFF" />
+
+                <include layout="@layout/evaluation_module_fragment_assessment_footer" />
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

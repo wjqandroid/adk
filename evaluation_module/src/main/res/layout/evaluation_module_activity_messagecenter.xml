@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_layout"
+    android:background="@color/COLOR_WHITE_F5F5F5"
+    android:orientation="vertical">
+
+    <include layout="@layout/evaluation_module_custom_title_simple" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/msg_refresh"
+        style="@style/match_layout"
+        android:layout_marginTop="@dimen/dip10">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_msg"
+            style="@style/match_layout" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

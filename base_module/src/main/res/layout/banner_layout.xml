@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/bannerContainer"
+    style="@style/match_layout"
+    android:clipChildren="false">
+
+    <com.visionvera.library.widget.banner.view.BannerViewPager
+        android:id="@+id/bannerViewPager"
+        style="@style/match_layout"
+        android:background="@drawable/no_banner"
+        android:clipChildren="false" />
+
+    <RelativeLayout
+        style="@style/match_wrap"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@id/circleIndicator"
+            style="@style/match_wrap"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dip10"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@id/numIndicator"
+            android:layout_width="@dimen/dip40"
+            android:layout_height="@dimen/dip40"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dip8"
+            android:background="@drawable/black_background"
+            android:gravity="center"
+            android:text="1/1"
+            android:textColor="@color/COLOR_WHITE_FFFFFF"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip40"
+            android:layout_below="@+id/circleIndicator"
+            android:background="@color/COLOR_BLACK_44000000"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@id/bannerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1000"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dip10"
+                android:singleLine="true"
+                android:textColor="@color/COLOR_WHITE_FFFFFF"
+                android:visibility="gone" />
+
+            <FrameLayout
+                style="@style/wrap_match"
+                android:paddingLeft="@dimen/dip10"
+                android:paddingRight="@dimen/dip10">
+
+                <TextView
+                    android:id="@id/numIndicatorInside"
+                    style="@style/wrap_match"
+                    android:gravity="center_vertical"
+                    android:text="1/1"
+                    android:textColor="@color/COLOR_WHITE_FFFFFF"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@id/indicatorInside"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bannerDefaultImage"
+        style="@style/match_layout"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+</RelativeLayout>

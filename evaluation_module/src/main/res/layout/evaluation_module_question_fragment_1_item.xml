@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/COLOR_white_ffffff"
+    android:layout_height="48dp">
+
+    <TextView
+        android:paddingHorizontal="@dimen/dip10"
+        android:id="@+id/evaluation_module_question_fragment_1_item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        tools:text="A 适当地"
+        android:text="------"
+        android:gravity="center_vertical"
+        android:textColor="@drawable/evaluation_module_question_item_textcolor"
+        android:textSize="15sp"
+        android:background="@drawable/evaluation_module_question_item_bgcolor"
+        />
+
+</LinearLayout>

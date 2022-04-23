@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingHorizontal="@dimen/common_padding_horizontal"
+    android:paddingVertical="@dimen/common_padding_horizontal"
+    android:layout_marginTop="2dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="无标题"
+        android:textColor="@color/common_text"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvSummary"
+        android:layout_marginVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我要输入的内容是我要输入的内容是我要输入的内容…"
+        android:textColor="@color/common_text"
+        android:maxLines="3"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="10-20"
+            android:textColor="#ff999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_marginStart="@dimen/common_padding_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文章"
+            android:textColor="#ff999999"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:id="@+id/ll_item_root"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/COLOR_GRAY_666666"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:descendantFocusability="blocksDescendants"
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                app:elevation="0dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    android:id="@+id/llArticleTitle"
+                    android:paddingHorizontal="@dimen/common_padding_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvArticleTitle"
+                        android:layout_marginVertical="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="如何治疗幼儿急性寻麻疹？"
+                        android:textColor="@color/common_text"
+                        android:textSize="17sp" />
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/ivAuthorHead"
+                            tools:src="@drawable/default_head"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:src="@drawable/default_head"
+                            app:civ_border_width="0dp"
+                            app:civ_border_color="@color/white" />
+
+                        <LinearLayout
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvAuthorName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="李明"
+                                android:textColor="@color/common_text"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/tvIdentifyStatus"
+                                android:layout_marginTop="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="已认证"
+                                android:textColor="#ff999999"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:visibility="gone"
+                            android:id="@+id/rlAddFocus"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/bg_60b7a9_r4"
+                            android:layout_width="62dp"
+                            android:layout_height="24dp">
+
+                            <LinearLayout
+                                android:layout_centerInParent="true"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_marginRight="5dp"
+                                    android:id="@+id/ivAddFocus"
+                                    android:src="@drawable/icon_add"
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp" />
+
+                                <TextView
+                                    android:id="@+id/tvFocusStatus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="关注"
+                                    android:textColor="#ffffffff"
+                                    android:textSize="13sp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_above="@id/llBottomToolBar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

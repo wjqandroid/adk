@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.counselling.activity.LookEvaluationActivity"
+    tools:ignore="ResourceName">
+
+
+        <LinearLayout
+            android:id="@+id/normal_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip50"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dip5"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/base_module_back" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/rl_back"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible"
+                    tools:text="返回" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:maxLength="12"
+                    android:maxLines="1"
+                    android:text="服务评价"
+                    android:textColor="#333333"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="#fff5f5f5"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/dip16">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="@dimen/dip15">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="服务信息"
+                        android:textColor="#ff333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/look_evaluation_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2021-09-29  17:00-18:00"
+                        android:textColor="#ff999999"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip5"
+                    android:layout_marginBottom="@dimen/dip23"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <com.visionvera.library.widget.view.CircleImageView
+                        android:id="@+id/look_evaluation_detail_header"
+                        android:layout_width="@dimen/dip40"
+                        android:layout_height="@dimen/dip40"
+                        android:src="@drawable/base_module_default_man" />
+
+
+                    <TextView
+                        android:id="@+id/look_evaluation_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:text="丁思然"
+                        android:textColor="#ff333333"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:id="@+id/look_evaluation_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="视频咨询"
+                        android:textColor="#ff333333"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dip10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/dip16">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="@dimen/dip15">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="整体满意度"
+                        android:textColor="#ff333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_satisfaction_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="如满意，请点亮五星哦"
+                        android:textColor="#ff999999"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/re_five_stars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dip50"
+                    android:layout_marginHorizontal="@dimen/dip50"
+                    android:layout_marginTop="@dimen/dip36"></androidx.recyclerview.widget.RecyclerView>
+
+
+                <com.visionvera.psychologist.c.utils.FiveStarView
+                    android:id="@+id/look_evaluation_fiveStarView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+
+                </com.visionvera.psychologist.c.utils.FiveStarView>
+
+                <TextView
+                    android:id="@+id/look_evaluation_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dip13"
+                    android:layout_marginBottom="@dimen/dip30"
+                    android:text=""
+                    android:textColor="#ff333333"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dip10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/dip16">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="@dimen/dip15">
+
+                    <TextView
+                        android:id="@+id/tv_evaluate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="评价及建议"
+                        android:textColor="#ff333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/200"
+                        android:textColor="#ff333333"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/look_evaluation_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dip74"
+                    android:background="@null"
+                    android:hint="请对本次咨询/诊疗做出的评价，或提出建议"
+                    android:maxLength="200"
+                    android:textSize="@dimen/sp_14"></EditText>
+
+
+                <TextView
+                    android:id="@+id/look_evaluation_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dip74"
+                    android:textSize="@dimen/sp_14"
+                    android:visibility="gone"></TextView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/look_evaluation_btn"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="@dimen/dip50"
+                android:layout_marginBottom="101dp"
+                android:background="@drawable/bg_logout"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/COLOR_white_ffffff"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

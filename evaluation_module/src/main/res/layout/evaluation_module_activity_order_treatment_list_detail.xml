@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/COLOR_WHITE_F5F5F5"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/evaluation_module_order_consult_detail_toolbar"
+        layout="@layout/base_module_common_toolbar" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/normal_view"
+        android:layout_below="@+id/evaluation_module_order_consult_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_below="@+id/evaluation_module_order_consult_detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="21dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/COLOR_white_ffffff"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="订单编号:"
+                            android:textColor="@color/COLOR_BLACK_333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/evaluation_module_order_consult_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/COLOR_BLACK_333333"
+                            android:textSize="14sp"
+                            tools:text="201912180004" />
+
+                        <TextView
+                            android:id="@+id/evaluation_module_order_consult_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffff6010"
+                            android:textSize="14sp"
+                            tools:text="待受理" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/COLOR_GRAY_D8D8D8" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="诊疗医生"
+                            android:textColor="@color/COLOR_GRAY_999999"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:maxEms="8"
+                            android:id="@+id/evaluation_module_counselor_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/COLOR_BLACK_333333"
+                            android:textSize="18sp"
+                            tools:text="何书桓" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="诊疗时间"
+                            android:textColor="@color/COLOR_GRAY_999999"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/evaluation_module_order_consult_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/COLOR_BLACK_333333"
+                            android:textSize="14sp"
+                            tools:text="2019-12-26 10:00-10:30" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/evaluation_module_consult_order_time"
+                            android:textColor="@color/COLOR_GRAY_999999"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/evaluation_module_order_consult_order_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/COLOR_BLACK_333333"
+                            android:textSize="14sp"
+                            tools:text="2019-12-26 10:00-10:30" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/evaluation_module_order_consult_table_type_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="诊疗形式"
+                            android:textColor="@color/COLOR_GRAY_999999"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/evaluation_module_order_consult_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/COLOR_BLACK_333333"
+                            android:textSize="14sp"
+                            tools:text="视频咨询" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="诊疗次数"
+                            android:textColor="@color/COLOR_GRAY_999999"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/evaluation_module_order_consult_consulttime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/COLOR_BLACK_333333"
+                            android:textSize="14sp"
+                            tools:text="4次" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/evaluation_module_phone"
+                            android:textColor="@color/COLOR_GRAY_999999"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/evaluation_module_order_consult_phonenumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/COLOR_BLACK_333333"
+                            android:textSize="14sp"
+                            tools:text="18501343303" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/evaluation_module_remark"
+                            android:textColor="@color/COLOR_GRAY_999999"
+                            android:textSize="14sp" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_alignParentRight="true"
+                                android:id="@+id/evaluation_module_order_consult_remark"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/COLOR_BLACK_333333"
+                                android:textSize="14sp"
+                                tools:text="无" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/evaluation_module_order_consult_type_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:background="@color/COLOR_white_ffffff">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:text="选择诊疗形式"
+                        android:paddingHorizontal="10dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/COLOR_BLACK_333333"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/COLOR_WHITE_F5F5F5" />
+
+                    <LinearLayout
+                        android:id="@+id/evaluation_module_order_consult_type_item"
+                        android:layout_width="match_parent"
+                        android:paddingHorizontal="10dp"
+                        android:layout_height="42dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="*"
+                            android:gravity="center"
+                            android:textColor="#ff0000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="咨询形式"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/COLOR_GRAY_999999"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/evaluation_module_order_consult_type_item_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            tools:text="咨询形式"
+                            android:gravity="right|center_vertical"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/evaluation_module_arrow_right" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/evaluation_module_order_consult_detail_operation"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    tools:text="完成"
+                    tools:textColor="@color/COLOR_BLACK_333333" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:text="拒绝"
+                    android:background="@drawable/evaluation_module_white_btn_bg_corner4"
+                    android:textColor="@color/base_module_theme" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/call_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/reject_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/evaluation_module_reject"
+            android:layout_centerHorizontal="true"
+            />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

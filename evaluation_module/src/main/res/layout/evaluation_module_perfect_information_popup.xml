@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="274dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/evaluation_module_white_btn_bg_corner6">
+
+        <ImageView
+            android:id="@+id/perfect_information_top_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/evaluation_module_perfect_information_iv"
+            />
+
+        <TextView
+            android:id="@+id/perfect_information_top_tv"
+            android:layout_below="@+id/perfect_information_top_iv"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/evaluation_module_perfect_information"
+            android:textColor="@color/COLOR_BLACK_333333"
+            android:textSize="@dimen/font17"
+            />
+        <TextView
+            android:id="@+id/perfect_information_top_notice_tv"
+            android:layout_below="@+id/perfect_information_top_tv"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="37dp"
+            android:gravity="center"
+            tools:text="@string/evaluation_module_perfect_information_notice"
+            android:textColor="#555555"
+            />
+
+        <Button
+            android:id="@+id/to_perfect_information_btn"
+            android:layout_marginTop="27dp"
+            android:layout_below="@+id/perfect_information_top_notice_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip32"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="32dp"
+            android:text="@string/evaluation_module_to_perfect_information"
+            android:background="@drawable/evaluation_module_shape_solid_ff3ca7ff_corner3"
+            android:textColor="@color/COLOR_white_ffffff"
+            android:layout_marginBottom="25dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/COLOR_white_ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/dip1"
+            android:layout_height="@dimen/dip36" />
+
+        <ImageView
+            android:id="@+id/evaluation_module_perfect_information_close"
+            android:layout_marginTop="@dimen/dip36"
+            android:layout_width="@dimen/dip28"
+            android:layout_height="@dimen/dip28"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/evaluation_module_perfect_information_close" />
+    </RelativeLayout>
+
+</LinearLayout>

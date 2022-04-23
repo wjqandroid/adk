@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_wrap"
+    android:background="@color/COLOR_WHITE_FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/wrap_layout"
+        android:layout_marginLeft="@dimen/dip25"
+        android:layout_marginTop="@dimen/dip20"
+        android:text="@string/evaluation_module_type"
+        android:textColor="@color/COLOR_BLACK_333333"
+        android:textSize="@dimen/font14" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_evaluation_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip50"
+        android:paddingHorizontal="@dimen/dip16" />
+
+    <TextView
+        style="@style/wrap_layout"
+        android:layout_marginLeft="@dimen/dip25"
+        android:layout_marginTop="@dimen/dip20"
+        android:text="@string/evaluation_module_sex"
+        android:textColor="@color/COLOR_BLACK_333333"
+        android:textSize="@dimen/font14" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_evaluation_sex"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip50"
+        android:paddingHorizontal="@dimen/dip16" />
+
+    <TextView
+        style="@style/wrap_layout"
+        android:layout_marginLeft="@dimen/dip25"
+        android:layout_marginTop="@dimen/dip20"
+        android:text="@string/evaluation_module_age"
+        android:textColor="@color/COLOR_BLACK_333333"
+        android:textSize="@dimen/font14" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_evaluation_age"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip100"
+        android:paddingHorizontal="@dimen/dip16" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/match_height_40"
+        android:layout_marginVertical="@dimen/dip15">
+
+        <TextView
+            android:id="@+id/tv_reset"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dip12"
+            android:layout_marginLeft="@dimen/dip15"
+            android:layout_toLeftOf="@+id/tv_ok"
+            android:background="@drawable/evaluation_module_shape_solid_ffc4c4c4_corner2"
+            android:gravity="center"
+            android:text="@string/evaluation_module_reset"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font14" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dip15"
+            android:background="@drawable/evaluation_module_solid_3e86fe_r4"
+            android:gravity="center"
+            android:text="@string/evaluation_module_ok"
+            android:textColor="@color/COLOR_WHITE_FFFFFF"
+            android:textSize="@dimen/font14" />
+    </LinearLayout>
+</LinearLayout>

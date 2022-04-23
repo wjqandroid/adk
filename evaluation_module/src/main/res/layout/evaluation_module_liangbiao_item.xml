@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="108dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="@dimen/common_padding_horizontal"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:paddingVertical="12dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="horizontal">
+
+    <com.visionvera.library.widget.ICircleImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/dip119"
+        android:layout_height="84dp"
+        android:scaleType="fitXY"
+        app:base_module_circle_corner="6"
+        android:background="@drawable/evaluation_module_bg_icon"
+        tools:src="@drawable/no_banner" />
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/dip5"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tv_title"
+                tools:text="专业情商测试"
+                android:textSize="17sp"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:maxLines="1"
+                android:id="@+id/tv_description"
+                tools:text="你的情商有多高？"
+                android:textSize="13sp"
+                android:textColor="#999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/evaluation_module_happy_peas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_heartBeans"
+                    android:singleLine="true"
+                    tools:text="5个心豆"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_usedNum"
+                android:singleLine="true"
+                tools:text="835人已测"
+                android:textSize="12sp"
+                android:textColor="@color/common_hint_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

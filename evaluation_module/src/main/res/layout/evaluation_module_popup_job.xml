@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_wrap"
+    android:background="@color/common_gray_bg"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/evaluation_module_rc_job"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginBottom="@dimen/dip10" />
+
+    <TextView
+        android:background="@color/COLOR_white_ffffff"
+        android:id="@+id/tvCancel"
+        android:paddingTop="@dimen/dip10"
+        android:paddingBottom="@dimen/dip20"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textColor="#ff333333"
+        android:textSize="14sp" />
+</LinearLayout>

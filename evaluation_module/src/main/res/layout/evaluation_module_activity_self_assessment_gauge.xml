@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.EvaluationGauge.activity.SelfAssessmentGaugeActivity">
+
+    <include layout="@layout/evaluation_module_self_assessment_toolbar" />
+
+    <ScrollView
+        android:id="@+id/normal_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_gray_bg">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="41dp"
+                android:background="@drawable/evaluation_module_cardview_bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="11dp">
+
+                    <TextView
+                        android:id="@+id/evaluation_module_self_assessment_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="------"
+                        android:visibility="gone"
+                        android:textColor="@color/COLOR_BLACK_333333"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginTop="17dp"
+                        android:textStyle="bold" />
+
+                  <!--  <TextView
+                        android:id="@+id/evaluation_module_self_assessment_humen_num"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="&#45;&#45;&#45;&#45;&#45;&#45;"
+                        android:textColor="@color/common_hint_text"
+                        android:gravity="center"
+                        android:textSize="12sp" />-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <com.visionvera.library.widget.ICircleImageView
+                            android:id="@+id/evaluation_module_self_assessment_mainiv"
+                            android:layout_width="match_parent"
+                            android:layout_height="213dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/no_banner" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="测评简介"
+                        android:textColor="@color/COLOR_BLACK_333333"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/evaluation_module_self_assessment_introduction"
+                        android:layout_marginTop="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="这就是抑郁自评量表的一个文字内容介绍，具体是多少字数介绍，看后台研发字数规定。我建议是100-200个字左右为佳，多了放不下也不好看。"
+                        android:textColor="@color/COLOR_GRAY_666666"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="6dp"
+                                android:layout_height="6dp"
+                                android:src="@drawable/evaluation_module_circle_gray" />
+
+                            <TextView
+                                android:id="@+id/evaluation_module_self_assessment_all_questions_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/COLOR_GRAY_666666"
+                                android:textSize="13sp"
+                                android:text="共--道选题" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="6dp"
+                                android:layout_height="6dp"
+                                android:src="@drawable/evaluation_module_circle_gray" />
+
+                            <TextView
+                                android:id="@+id/evaluation_module_self_assessment_account_expense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/COLOR_GRAY_666666"
+                                android:textSize="13sp"
+                                android:text="扣除--个心豆" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="6dp"
+                                android:layout_height="6dp"
+                                android:src="@drawable/evaluation_module_circle_gray" />
+
+                            <TextView
+                                android:id="@+id/evaluation_module_self_assessment_continue_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/COLOR_GRAY_666666"
+                                android:textSize="13sp"
+                                android:text="用时--分钟" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="适用对象"
+                        android:textColor="@color/COLOR_BLACK_333333"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/evaluation_module_self_assessment_suit_object"
+                        android:layout_marginTop="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="患有抑郁症的患者"
+                        android:textColor="@color/COLOR_GRAY_666666"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="报告类型"
+                        android:textColor="@color/COLOR_BLACK_333333"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/evaluation_module_self_assessment_report_type"
+                        android:layout_marginTop="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="此处有报告"
+                        android:textColor="@color/COLOR_GRAY_666666"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:id="@+id/assessment_gauge_pay_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:id="@+id/assessment_gauge_pay_title"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="支付类型"
+                            android:textColor="@color/COLOR_BLACK_333333"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_marginVertical="@dimen/dip5"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/rlCash"
+                                android:background="@drawable/evaluation_module_bg_pay_type_selector"
+                                android:gravity="center_vertical"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp">
+
+                                <LinearLayout
+                                    android:gravity="center_vertical"
+                                    android:layout_centerInParent="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tvCash"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="现金支付"
+                                        android:textColor="#ff666666"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/tvCashPrice"
+                                        android:layout_marginLeft="@dimen/dip12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="¥20.00"
+                                        android:textColor="#ff333333"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rlXindou"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:background="@drawable/evaluation_module_bg_pay_type_selector"
+                                android:gravity="center_vertical"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp">
+
+                                <LinearLayout
+                                    android:gravity="center_vertical"
+                                    android:layout_centerInParent="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tvXindou"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="心豆支付"
+                                        android:textColor="#ff666666"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/tvXindouPrice"
+                                        android:layout_marginLeft="@dimen/dip12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="10"
+                                        android:textColor="#ff333333"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/assessment_gauge_pay_tip_title"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="您有1个已支付未使用的订单"
+                        android:textColor="@color/COLOR_BLUE_3E86FE"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                    <Button
+                        android:id="@+id/evaluation_module_start_evaluation_btn"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="17dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="提交订单"
+                        android:textColor="@color/COLOR_white_ffffff"
+                        android:textSize="16sp"
+                        android:background="@drawable/evaluation_module_solid_a1c1f7_r6" />
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="17dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+
+                        <CheckBox
+                            android:checked="true"
+                            android:id="@+id/checkBox"
+                            style="@style/evaluation_module_MyCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false" />
+
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我已知情同意"
+                            android:textColor="@color/COLOR_GRAY_666666"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/evaluation_module_assessment_protocol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="《测评协议要求》"
+                            android:textColor="@color/COLOR_BLUE_FF3E86FE"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

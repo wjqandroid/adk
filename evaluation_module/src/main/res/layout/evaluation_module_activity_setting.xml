@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_layout"
+    android:background="@color/COLOR_WHITE_F5F5F5"
+    android:orientation="vertical">
+
+    <include layout="@layout/evaluation_module_custom_title_simple" />
+
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:layout_marginTop="@dimen/dip10"
+        android:background="@color/COLOR_WHITE_FFFFFF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/rl_setting_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip48">
+
+            <TextView
+                style="@style/wrap_layout"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dip16"
+                android:text="@string/evaluation_module_account_safety"
+                android:textColor="@color/COLOR_BLACK_333333"
+                android:textSize="@dimen/font14" />
+
+            <ImageView
+                android:layout_width="@dimen/dip10"
+                android:layout_height="@dimen/dip10"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dip16"
+                android:background="@drawable/evaluation_module_arrow_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip1"
+            android:layout_marginLeft="@dimen/dip16"
+            android:background="@color/COLOR_WHITE_F2F1F6" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip55">
+
+            <TextView
+                style="@style/wrap_layout"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dip16"
+                android:text="@string/evaluation_module_new_message"
+                android:textColor="@color/COLOR_BLACK_333333"
+                android:textSize="@dimen/font16" />
+
+            <CheckBox
+                android:id="@+id/cb_push"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:button="@drawable/evaluation_module_push"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:layout_marginTop="@dimen/dip10"
+        android:background="@color/COLOR_WHITE_FFFFFF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/rl_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip48">
+
+            <TextView
+                style="@style/wrap_layout"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dip16"
+                android:text="@string/evaluation_module_about_us"
+                android:textColor="@color/COLOR_BLACK_333333"
+                android:textSize="@dimen/font14" />
+
+            <ImageView
+                android:layout_width="@dimen/dip10"
+                android:layout_height="@dimen/dip10"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dip16"
+                android:background="@drawable/evaluation_module_arrow_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip1"
+            android:layout_marginLeft="@dimen/dip16"
+            android:background="@color/COLOR_WHITE_F2F1F6" />
+
+        <RelativeLayout
+            android:id="@+id/set_version_layout"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip48">
+
+            <TextView
+                style="@style/wrap_layout"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dip16"
+                android:text="@string/evaluation_module_about"
+                android:textColor="@color/COLOR_BLACK_333333"
+                android:textSize="@dimen/font14" />
+
+            <TextView
+                android:textIsSelectable="true"
+                android:id="@+id/tv_version"
+                style="@style/wrap_layout"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dip20"
+                android:text="V1.0版本"
+                android:textColor="@color/COLOR_GRAY_666666"
+                android:textSize="@dimen/font14" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/COLOR_WHITE_F2F1F6" />
+
+        <TextView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/evaluation_module_exit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip44"
+            android:gravity="center"
+            android:text="@string/evaluation_module_exit"
+            android:textColor="#F83F3B"
+            android:textSize="@dimen/font14" />
+
+    </LinearLayout>
+
+</LinearLayout>

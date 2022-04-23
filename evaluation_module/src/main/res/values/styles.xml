@@ -1,0 +1,180 @@
+<resources>
+
+    <style name="evaluation_module_depression_tv_style" parent="match_wrap">
+        <item name="android:layout_marginLeft">@dimen/dip15</item>
+        <item name="android:layout_marginTop">@dimen/dip15</item>
+        <item name="android:textColor">@color/COLOR_WHITE_FFFFFF</item>
+        <item name="android:textSize">@dimen/font20</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginRight">@dimen/dip10</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="evaluation_module_depression_tv1_style" parent="wrap_layout">
+        <item name="android:layout_marginLeft">@dimen/dip15</item>
+        <item name="android:layout_marginTop">@dimen/dip58</item>
+        <item name="android:paddingLeft">@dimen/dip9</item>
+        <item name="android:paddingRight">@dimen/dip9</item>
+        <item name="android:paddingTop">@dimen/dip2</item>
+        <item name="android:paddingBottom">@dimen/dip2</item>
+        <item name="android:textColor">@color/COLOR_WHITE_FFFFFF</item>
+        <item name="android:textSize">@dimen/font16</item>
+        <item name="android:background">@drawable/evaluation_module_test</item>
+    </style>
+
+    <style name="evaluation_module_depression_tv2_style" parent="wrap_layout">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginTop">@dimen/dip17</item>
+        <item name="android:paddingLeft">@dimen/dip10</item>
+        <item name="android:paddingRight">@dimen/dip10</item>
+        <item name="android:paddingTop">@dimen/dip4</item>
+        <item name="android:paddingBottom">@dimen/dip4</item>
+        <item name="android:textColor">@color/COLOR_BLUE_003DA4</item>
+        <item name="android:textSize">@dimen/font12</item>
+        <item name="android:background">@drawable/evaluation_module_tested</item>
+    </style>
+
+    <style name="evaluation_module_MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/evaluation_module_checkbox_style</item>
+    </style>
+
+    <!--主界面底部导航-->
+    <style name="evaluation_module_main_bottom_tab">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">@dimen/dip0</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/font11</item>
+        <item name="android:textColor">@drawable/evaluation_module_tab_text</item>
+        <item name="android:drawablePadding">@dimen/dip1</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="evaluation_module_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <declare-styleable name="evaluation_module_BubbleSeekBar">
+        <attr name="evaluation_module_bsb_min" format="float|reference" /> <!--min < max, default: 0.0f-->
+        <attr name="evaluation_module_bsb_max" format="float|reference" /> <!--min < max, default: 100.0f-->
+        <attr name="evaluation_module_bsb_progress" format="float|reference" /> <!--real time progress value, default: min-->
+        <attr name="evaluation_module_bsb_is_float_type" format="boolean" /> <!--support for float type-->
+        <attr name="evaluation_module_bsb_track_size" format="dimension|reference" /> <!--height of right-track(on the right of thumb), default: 2dp-->
+        <!--height of left-track(on the left of thumb), default: 2dp higher than right-track's height-->
+        <attr name="evaluation_module_bsb_second_track_size" format="dimension|reference" />
+        <attr name="evaluation_module_bsb_thumb_radius" format="dimension|reference" /> <!--radius of thumb, default: 2dp higher than left-track's height-->
+        <!--radius of thumb when be dragging, default: 2 times of left-track's height-->
+        <attr name="evaluation_module_bsb_thumb_radius_on_dragging" format="dimension|reference" />
+        <attr name="evaluation_module_bsb_track_color" format="color|reference" /> <!--color of right-track, default: R.color.colorPrimary-->
+        <attr name="evaluation_module_bsb_second_track_color" format="color|reference" /> <!--color of left-track, default: R.color.colorAccent-->
+        <attr name="evaluation_module_bsb_thumb_color" format="color|reference" /> <!--color of thumb, default: same as left-track's color-->
+        <attr name="evaluation_module_bsb_section_count" format="integer|reference" /> <!--shares of whole progress(max - min), default: 10-->
+        <attr name="evaluation_module_bsb_show_section_mark" format="boolean" /> <!--show demarcation points or not, default: false-->
+        <attr name="evaluation_module_bsb_auto_adjust_section_mark" format="boolean" /> <!--auto scroll to the nearest section_mark or not, default: false-->
+        <attr name="evaluation_module_bsb_show_section_text" format="boolean" /> <!--show section-text or not, default: false-->
+        <attr name="evaluation_module_bsb_section_text_size" format="dimension|reference" /> <!--text size of section-text, default: 14sp-->
+        <attr name="evaluation_module_bsb_section_text_color" format="color|reference" /> <!--text color of section-text, default: same as right-track's color-->
+        <!--text position of section-text relative to track, sides, bottom_sides, below_section_mark, default: sides-->
+        <attr name="evaluation_module_bsb_section_text_position">
+            <enum name="sides" value="0" />
+            <enum name="bottom_sides" value="1" />
+            <enum name="below_section_mark" value="2" />
+        </attr>
+        <attr name="evaluation_module_bsb_section_text_interval" format="integer" /> <!--the interval of two section-text, default: 1-->
+        <attr name="evaluation_module_bsb_show_thumb_text" format="boolean" /> <!--show real time progress-text under thumb or not, default: false-->
+        <attr name="evaluation_module_bsb_thumb_text_size" format="dimension|reference" /> <!--text size of progress-text, default: 14sp-->
+        <attr name="evaluation_module_bsb_thumb_text_color" format="color|reference" /> <!--text color of progress-text, default: same as left-track's color-->
+        <attr name="evaluation_module_bsb_show_progress_in_float" format="boolean" /> <!--show bubble-progress in float or not, default: false-->
+        <attr name="evaluation_module_bsb_touch_to_seek" format="boolean" /> <!--touch anywhere on track to quickly seek, default: false-->
+        <attr name="evaluation_module_bsb_seek_step_section" format="boolean" /> <!--seek one step by one section, the progress is discrete, default: false-->
+        <attr name="evaluation_module_bsb_seek_by_section" format="boolean" /> <!--seek by section, the progress may not be linear, default: false-->
+        <attr name="evaluation_module_bsb_bubble_color" format="color|reference" /> <!--color of bubble, default: same as left-track's color-->
+        <attr name="evaluation_module_bsb_bubble_text_size" format="dimension|reference" /> <!--text size of bubble-progress, default: 14sp-->
+        <attr name="evaluation_module_bsb_bubble_text_color" format="color|reference" /> <!--text color of bubble-progress, default: #ffffffff-->
+        <attr name="evaluation_module_bsb_anim_duration" format="integer" /> <!--duration of animation, default: 200ms-->
+        <attr name="evaluation_module_bsb_always_show_bubble" format="boolean" /> <!--bubble shows all time, default: false-->
+        <attr name="evaluation_module_bsb_always_show_bubble_delay" format="integer" /> <!--the delay duration before bubble shows all the time, default: 200ms-->
+        <attr name="evaluation_module_bsb_hide_bubble" format="boolean" /> <!--hide bubble, default: false-->
+        <attr name="evaluation_module_bsb_rtl" format="boolean" /> <!--right to left, default: false-->
+        <attr name="android:enabled" />
+    </declare-styleable>
+
+    <!--意见反馈文字样式-->
+    <style name="evaluation_module_style_text_feedback" parent="wrap_layout">
+        <item name="android:textSize">@dimen/font16</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/common_padding_horizontal</item>
+        <item name="android:textColor">@color/COLOR_BLACK_333333</item>
+    </style>
+
+    <!--意见反馈图片样式-->
+    <style name="evaluation_module_style_img_feedback">
+        <item name="android:layout_width">@dimen/dip15</item>
+        <item name="android:layout_height">@dimen/dip15</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:src">@drawable/evaluation_module_feedback_selected</item>
+        <item name="android:layout_marginRight">@dimen/common_padding_horizontal</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <!--意见反馈分割线样式-->
+    <style name="evaluation_module_style_line_feedback">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dip1</item>
+        <item name="android:layout_marginLeft">@dimen/dip16</item>
+        <item name="android:background">@color/COLOR_WHITE_F2F1F6</item>
+    </style>
+
+    <style name="evaluation_module_step_view_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/COLOR_GRAY_999999</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="evaluation_module_step_view_circle">
+        <item name="android:layout_width">5dp</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:src">@drawable/evaluation_module_stepview_gray</item>
+    </style>
+
+    <style name="evaluation_module_step_view_line">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:background">@color/COLOR_GRAY_D1D2D6</item>
+    </style>
+
+    <style name="evaluation_module_test_result">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dip9</item>
+        <item name="android:layout_marginTop">@dimen/dip5</item>
+        <item name="android:layout_marginRight">@dimen/dip9</item>
+        <item name="android:layout_marginBottom">@dimen/dip13</item>
+
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <declare-styleable name="evaluation_module_setting_item_view">
+        <attr name="evaluation_module_showtopline" format="boolean" />
+        <attr name="evaluation_module_showbottomline" format="boolean" />
+        <attr name="evaluation_module_image" format="reference|integer" />
+        <attr name="evaluation_module_title" format="reference|string" />
+    </declare-styleable>
+
+    <style name="pop_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/translate_pop_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_pop_out</item>
+    </style>
+
+</resources>

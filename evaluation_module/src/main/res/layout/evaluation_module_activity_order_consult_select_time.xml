@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.counselling.activity.OrderConsultSelectTimeActivity">
+
+    <include layout="@layout/base_module_common_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/normal_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/evaluation_module_current_month"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@color/COLOR_WHITE_F5F5F5"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:textColor="#ff333333"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="12月" />
+
+
+            <com.haibin.calendarview.CalendarLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/COLOR_WHITE_F5F5F5"
+                android:orientation="vertical"
+                app:calendar_show_mode="only_week_view"
+                app:default_status="expand">
+
+
+                <com.haibin.calendarview.CalendarView
+                    android:id="@+id/evaluation_module_order_consult_select_time_calendarview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/COLOR_WHITE_F5F5F5"
+                    app:calendar_height="40dp"
+                    app:calendar_padding="4dp"
+                    app:current_month_lunar_text_color="#CFCFCF"
+                    app:current_month_text_color="#4F4F4F"
+                    app:day_text_size="15sp"
+                    app:month_view="com.visionvera.psychologist.c.widget.calendar.SingleMonthView"
+                    app:month_view_show_mode="mode_only_current"
+                    app:other_month_text_color="#989696"
+                    app:month_view_auto_select_day="first_day_of_month"
+                    app:scheme_text="假"
+                    app:scheme_text_color="#333"
+                    app:scheme_theme_color="#333"
+                    app:select_mode="single_mode"
+                    app:selected_text_color="#fff"
+                    app:selected_theme_color="@color/COLOR_BLUE_3E86FE"
+                    app:week_background="@color/COLOR_WHITE_F5F5F5"
+                    app:week_text_color="#111"
+                    app:week_start_with="mon"
+                    app:week_view="com.visionvera.psychologist.c.widget.calendar.SingleWeekView"
+                    app:year_view_day_text_color="#333333"
+                    app:year_view_day_text_size="9sp"
+                    app:year_view_month_text_color="#00ff00"
+                    app:year_view_month_text_size="20sp"
+                    app:year_view_scheme_color="@color/COLOR_BLUE_3E86FE" />
+
+
+            </com.haibin.calendarview.CalendarLayout>
+
+            <RelativeLayout
+                android:paddingRight="8dp"
+                android:id="@+id/rl_nextWeek"
+                android:background="@color/COLOR_WHITE_F5F5F5"
+                android:layout_width="28dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/evaluation_module_double_right"
+                    android:layout_width="13dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="20dp"
+                        android:background="@color/COLOR_BLUE_3E86FE" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="上午"
+                        android:textColor="#ff333333"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/evaluation_module_order_consult_morning_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="20dp"
+                        android:background="@color/COLOR_BLUE_3E86FE" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="下午"
+                        android:textColor="#ff333333"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/evaluation_module_order_consult_afternoon_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

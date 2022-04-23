@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="12dp"
+    android:orientation="horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/adapter_article_recommendation_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:textColor="@color/color_333333"
+            android:textStyle="bold"
+            tools:text="走出抑郁，学会自我疗愈， 走向健康生活每一天"
+            />
+
+        <TextView
+            android:id="@+id/adapter_article_recommendation_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="11sp"
+            android:textColor="@color/color_999999"
+            tools:text="走出抑郁，学会自我疗愈， 走向健康生活每一天"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/adapter_article_recommendation_img"
+        android:layout_width="120dp"
+        android:layout_height="84dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="30dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/COLOR_GRAY_EBECF0">
+
+        <View
+            android:layout_width="28dp"
+            android:layout_height="0.5dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/evaluation_module_share_popup_title"
+            android:background="@color/COLOR_GRAY_DDDDDD" />
+
+        <TextView
+            android:id="@+id/evaluation_module_share_popup_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="13dp"
+            android:text="分享至"
+            android:textColor="@color/COLOR_GRAY_999999"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="28dp"
+            android:layout_height="0.5dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/evaluation_module_share_popup_title"
+            android:background="@color/COLOR_GRAY_DDDDDD" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/COLOR_GRAY_EBECF0"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/evaluation_module_share_qq_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/evaluation_module_share_qq_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:padding="10dp"
+                android:background="@drawable/evaluation_module_white_circle_bg"
+                android:src="@drawable/evaluation_module_share_qq" />
+
+            <TextView
+                android:id="@+id/evaluation_module_share_qq_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/evaluation_module_share_qq_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="22dp"
+                android:text="QQ"
+                android:textColor="@color/COLOR_BLACK_000000"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/evaluation_module_share_wechat_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/evaluation_module_share_wechat_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:padding="10dp"
+                android:background="@drawable/evaluation_module_white_circle_bg"
+                android:src="@drawable/evaluation_module_share_wechat" />
+
+            <TextView
+                android:id="@+id/evaluation_module_share_chat_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/evaluation_module_share_wechat_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="22dp"
+                android:text="@string/evaluation_module_wechat"
+                android:textColor="@color/COLOR_BLACK_000000"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/evaluation_module_share_friend_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/evaluation_module_share_friend_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:padding="10dp"
+                android:background="@drawable/evaluation_module_white_circle_bg"
+                android:src="@drawable/evaluation_module_share_friend" />
+
+            <TextView
+                android:id="@+id/evaluation_module_share_friend_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/evaluation_module_share_friend_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="22dp"
+                android:text="@string/evaluation_module_friendcircle"
+                android:textColor="@color/COLOR_BLACK_000000"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/evaluation_module_share_zone_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/evaluation_module_share_zone_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:padding="10dp"
+                android:background="@drawable/evaluation_module_white_circle_bg"
+                android:src="@drawable/evaluation_module_share_zone" />
+
+            <TextView
+                android:id="@+id/evaluation_module_share_zone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/evaluation_module_share_zone_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="22dp"
+                android:text="@string/evaluation_module_qq_zone"
+                android:textColor="@color/COLOR_BLACK_000000"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/evaluation_module_share_sina_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/evaluation_module_share_sina_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:padding="10dp"
+                android:background="@drawable/evaluation_module_white_circle_bg"
+                android:src="@drawable/evaluation_module_umeng_socialize_sina" />
+
+            <TextView
+                android:id="@+id/evaluation_module_share_sina_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/evaluation_module_share_sina_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="22dp"
+                android:text="@string/evaluation_module_sina_micro_blog"
+                android:textColor="@color/COLOR_BLACK_000000"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/evaluation_module_share_popup_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/COLOR_white_ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginVertical="11dp"
+            android:text="取消"
+            android:textColor="@color/COLOR_GRAY_666666"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/match_wrap"
+    android:background="@color/COLOR_WHITE_FFFFFF"
+    android:paddingTop="@dimen/dip10"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.visionvera.library.widget.view.CircleImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/dip56"
+            android:layout_height="@dimen/dip56"
+            android:layout_marginLeft="@dimen/dip15"
+            android:src="@drawable/base_module_default_man" />
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:layout_marginLeft="@dimen/dip12"
+            android:layout_marginRight="@dimen/dip15"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/tv_name"
+                    style="@style/wrap_layout"
+                    android:text="张豆豆"
+                    android:ellipsize="end"
+                    android:maxEms="7"
+                    android:textColor="@color/COLOR_BLACK_000000"
+                    android:textSize="@dimen/font16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginHorizontal="@dimen/dip5"
+                    android:singleLine="true"
+                    style="@style/wrap_layout"
+                    android:text="/"
+                    android:textColor="@color/COLOR_BLACK_000000"
+                    android:textSize="@dimen/font16" />
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    style="@style/wrap_layout"
+                    android:text="3255"
+                    android:textColor="#F83F3B"
+                    android:textSize="@dimen/font13" />
+
+                <TextView
+                    style="@style/wrap_layout"
+                    android:text="人咨询"
+                    android:textColor="@color/COLOR_BLACK_000000"
+                    android:textSize="@dimen/font14" />
+
+                <TextView
+                    android:gravity="end"
+                    android:id="@+id/tv_city"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip10"
+                    tools:text="北京市"
+                    android:textColor="@color/COLOR_BLACK_000000"
+                    android:textSize="@dimen/font14" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginRight="@dimen/dip5"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:src="@color/base_module_theme"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="@color/base_module_theme" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="二级心理咨询师、中美高级精神分析班学员"
+                    android:textColor="@color/COLOR_GRAY_999999"
+                    android:textSize="@dimen/font13" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_type"
+                style="@style/wrap_layout"
+                android:text="#慢性压力   #成长创伤   #适应障碍"
+                android:textColor="@color/COLOR_BLUE_3E86FE"
+                android:textSize="@dimen/font12" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/dip10"
+        android:background="@color/COLOR_WHITE_F4F3F4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip2" />
+
+</LinearLayout>

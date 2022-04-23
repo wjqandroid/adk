@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="base_module_colorPrimary">#efefef</color>
+    <color name="base_module_colorPrimaryDark">#efefef</color>
+    <color name="base_module_colorAccent">#3E86FE</color>
+
+    <color name="base_module_theme">#3CA7FF</color>
+    <color name="base_module_white">#FFFFFF</color>
+
+    <color name="common_gray_bg">#F5F7FB</color>
+    <color name="common_hint_text">#999999</color>
+    <!--一般是二级标题-->
+    <color name="common_text2">#555555</color>
+
+    <color name="COLOR_white_ffffff">#ffffff</color>
+    <color name="item_divide">#f5f5f5</color>
+    <color name="common_text">#333333</color>
+    <color name="common_gray_text_color">#666666</color>
+
+    <!--透明-->
+    <color name="TRANSPARENT">#00000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="TRANSPARENT_60">#99000000</color>
+    <color name="TRANSPARENT_CC">#CC000000</color>
+
+    <!--白色-->
+    <color name="COLOR_WHITE_FFFFFF">#FFFFFF</color>
+    <color name="COLOR_WHITE_FFF8F8F8">#FFF8F8F8</color>
+    <color name="COLOR_WHITE_F1F1F1">#F1F1F1</color>
+    <color name="COLOR_WHITE_F4F4F4">#F4F4F4</color>
+    <color name="COLOR_WHITE_F5F5F5">#F5F5F5</color>
+    <color name="COLOR_WHITE_F6F6F6">#F6F6F6</color>
+    <color name="COLOR_WHITE_F7F7F7">#F7F7F7</color>
+    <color name="COLOR_WHITE_FFFEFE">#FFFEFE</color>
+    <color name="COLOR_WHITE_66FFFFFF">#66FFFFFF</color>
+    <color name="COLOR_WHITE_F4F3F4">#F4F3F4</color>
+    <color name="COLOR_WHITE_33FFFFFF">#33FFFFFF</color>
+    <color name="COLOR_WHITE_F2F1F6">#F2F1F6</color>
+
+    <!--灰色-->
+    <color name="COLOR_GRAY_929292">#929292</color>
+    <color name="COLOR_GRAY_666666">#666666</color>
+    <color name="COLOR_GRAY_999999">#999999</color>
+    <color name="COLOR_GRAY_CCCCCC">#CCCCCC</color>
+    <color name="COLOR_GRAY_BBBBBB">#BBBBBB</color>
+    <color name="COLOR_GRAY_DDDDDD">#DDDDDD</color>
+    <color name="COLOR_GRAY_EEEEEE">#EEEEEE</color>
+    <color name="COLOR_GRAY_D8D8D8">#D8D8D8</color>
+    <color name="COLOR_GRAY_DEE1DF">#DEE1DF</color>
+    <color name="COLOR_GRAY_5E616B">#5E616B</color>
+    <color name="COLOR_GRAY_EBECF0">#EBECF0</color>
+    <color name="COLOR_GRAY_70798D">#70798D</color>
+    <color name="COLOR_GRAY_E9E8ED">#E9E8ED</color>
+    <color name="COLOR_GRAY_D1D2D6">#D1D2D6</color>
+    <color name="COLOR_GRAY_FFF0F0F0">#FFF0F0F0</color>
+    <color name="COLOR_GRAY_FFF0F4F8">#FFF0F4F8</color>
+    <color name="COLOR_GRAY_F5F6F6">#F5F6F6</color>
+    <color name="COLOR_GRAY_F2F2F2">#F2F2F2</color>
+
+    <!--蓝色-->
+    <color name="COLOR_BLUE_337AB7">#337AB7</color>
+    <color name="COLOR_BLUE_489BCA">#489BCA</color>
+    <color name="COLOR_BLUE_21A3F0">#21A3F0</color>
+    <color name="COLOR_BLUE_2B98ED">#2B98ED</color>
+    <color name="COLOR_BLUE_5B61E0">#5B61E0</color>
+    <color name="COLOR_BLUE_1194DA">#1194DA</color>
+    <color name="COLOR_BLUE_5596CC">#5596CC</color>
+    <color name="COLOR_BLUE_277EDC">#277EDC</color>
+    <color name="COLOR_BLUE_1D99EE">#1D99EE</color>
+    <color name="COLOR_BLUE_D7EBF0">#D7EBF0</color>
+    <color name="COLOR_BLUE_507AA7">#507AA7</color>
+    <color name="COLOR_BLUE_FF6ABDFF">#FF6ABDFF</color>
+    <color name="COLOR_BLUE_3E86FE">#3E86FE</color>
+    <color name="COLOR_BLUE_a63E86FE">#a63e86fe</color>
+
+
+    <color name="COLOR_BLUE_003DA4">#003DA4</color>
+    <color name="COLOR_BLUE_FF3E86FE">#FF3E86FE</color>
+    <color name="COLOR_BLUE_213E86FE">#213E86FE</color>
+    <color name="COLOR_BLUE_A1C1F7">#A1C1F7</color>
+    <color name="COLOR_BLUE_1A3E86FE">#1A3E86FE</color>
+
+    <!--黑色-->
+    <color name="COLOR_BLACK_000000">#000000</color>
+    <color name="COLOR_BLACK_66000000">#66000000</color>
+    <color name="COLOR_BLACK_77000000">#77000000</color>
+    <color name="COLOR_BLACK_222222">#222222</color>
+    <color name="COLOR_BLACK_333333">#333333</color>
+    <color name="COLOR_BLACK_44000000">#44000000</color>
+    <color name="COLOR_BLACK_252433">#252433</color>
+
+    <!--黄色-->
+    <color name="COLOR_YELLOW_FFCF0D">#FFCF0D</color>
+    <color name="COLOR_YELLOW_ED9E1E">#ED9E1E</color>
+    <color name="COLOR_YELLOW_FFF9B780">#FFF9B780</color>
+    <color name="COLOR_YELLOW_F1A452">#F1A452</color>
+
+    <!--橘红色-->
+    <color name="COLOR_ORANGE_FF5B01">#FF5B01</color>
+    <color name="COLOR_ORANGE_FF782E">#FF782E</color>
+    <color name="COLOR_ORANGE_1AFF782E">#1AFF782E</color>
+
+    <!--绿色-->
+    <color name="COLOR_GREEN_1DD864">#1DD864</color>
+    <color name="COLOR_GREEN_FF6AECCB">#FF6AECCB</color>
+
+    <!--粉色-->
+    <color name="COLOR_PINK_FFED9595">#FFED9595</color>
+    <color name="COLOR_PINK_1AFF0000">#1AFF0000</color>
+    <color name="TRANSPARENT_33">#33000000</color>
+
+    <color name="biz_audio_progress_bg">#00b2ff</color>
+    <color name="biz_audio_progress_first">#ffffff</color>
+    <color name="biz_audio_progress_second">#6b6666</color>
+
+    <color name="super_vod_vtt_bg">#7E000000</color>
+
+    <!--红色-->
+    <color name="COLOR_RED_E20000">#E20000</color>
+    <color name="COLOR_RED_FF4E4E">#FF4E4E</color>
+    <color name="COLOR_ORANGE_E90808">#E90808</color>
+    <color name="default_bg">#aa000000</color>
+
+    <!-- 裁剪范围颜色 -->
+    <color name="colorTintRed">#FF4C58</color>
+
+    <!--special color-->
+    <color name="black_a10_color">#1a000000</color>
+    <color name="COLOR_RED_FF768D">#FF768D</color>
+    <color name="COLOR_BLUE_75C4EF">#75C4EF</color>
+
+    <!--gray4-->
+    <color name="colorGray4">#787878</color>
+    <color name="color_ff6502">#FF6502</color>
+
+    <color name="base_module_color_FF4E00">#FF4E00</color>
+    <color name="base_module_color_00D4C5">#00D4C5</color>
+    <color name="base_module_color_FF7884">#FF7884</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="viewfinder_laser">#ffff0000</color>
+</resources>

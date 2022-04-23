@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:id="@+id/evaluation_module_feedback_iv"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/evaluation_module_add" />
+
+    <ImageView
+        android:id="@+id/evaluation_module_feedback_iv_delete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/evaluation_module_close" />
+
+</RelativeLayout>

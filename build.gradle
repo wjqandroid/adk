@@ -1,0 +1,62 @@
+    // Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: "project_config.gradle"
+buildscript {
+    ext.kotlin_version = "1.4.21"
+    repositories {
+        maven {url 'http://developer.huawei.com/repo/'}// 华为仓，如果不集成华为可以不加
+
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+
+        mavenCentral()
+//        maven { url 'https://maven.google.com' }
+        maven { url "https://jitpack.io" }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+//        google()
+
+    }
+    dependencies {
+        classpath 'com.huawei.agconnect:agcp:1.2.0.300'// 华为仓
+
+        classpath 'com.android.tools.build:gradle:4.1.0'
+
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.0' // add plugin
+
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.1'
+
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+//        classpath "com.tencent.android.tpns:tpnsplugin:1.8.0" //tpns集成插件
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        // 添加神策分析 android-gradle-plugin2 依赖
+        classpath 'com.sensorsdata.analytics.android:android-gradle-plugin2:3.3.7'
+    }
+}
+
+allprojects {
+    repositories {
+        maven {url 'http://developer.huawei.com/repo/'} // 华为仓，如果不集成华为可以不加
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+
+//        google()
+//        jcenter()
+        mavenCentral()
+        flatDir {
+            dirs 'libs'
+            dirs project(':app').file('libs')
+            dirs project(':base_module').file('libs')
+        }
+//        maven { url 'https://maven.google.com' }
+        maven { url "https://jitpack.io" }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        //友盟分享----新浪微博需要
+        maven { url "https://dl.bintray.com/thelasterstar/maven/" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+

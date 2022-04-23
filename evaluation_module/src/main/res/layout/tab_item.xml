@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tab_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:textColor="@color/color_333333"
+        tools:text="五官科"
+         />
+    
+    <View
+        android:id="@+id/tab_item_indicator"
+        android:layout_width="18dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/tab_item_name"
+        android:layout_centerHorizontal="true"
+        android:background="@color/color_3ca7ff"
+        />
+
+</RelativeLayout>

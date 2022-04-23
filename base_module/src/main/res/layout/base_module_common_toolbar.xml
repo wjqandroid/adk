@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center_vertical"
+    android:id="@+id/toolbar"
+    android:background="@color/base_module_white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <RelativeLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/rl_back"
+                android:paddingLeft="18dp"
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/base_module_back" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/rl_back"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                tools:text="返回" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="标题" />
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:textSize="16sp"
+                tools:text="提交" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/match_layout"
+    android:background="@color/COLOR_WHITE_FFFFFF"
+    android:orientation="vertical"
+    tools:context=".module.counselling.activity.SearchCounselorActivity">
+
+    <RelativeLayout style="@style/match_height_45">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="18dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/base_module_back" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip35"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dip5"
+            android:layout_marginRight="@dimen/dip9"
+            android:layout_toLeftOf="@+id/rl_service_search"
+            android:layout_toRightOf="@+id/iv_back"
+            android:background="@drawable/bg_soild_ebecf0_r5">
+
+            <ImageView
+                android:layout_width="@dimen/dip15"
+                android:layout_height="@dimen/dip15"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dip15"
+                android:src="@drawable/evaluation_module_search" />
+
+            <EditText
+                android:id="@+id/et_search"
+                style="@style/match_layout"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dip40"
+                android:background="@null"
+                android:hint="@string/evaluation_module_search_consultant"
+                android:textColor="@color/COLOR_BLACK_333333"
+                android:textColorHint="@color/COLOR_GRAY_999999"
+                android:textSize="@dimen/font14" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_service_search"
+            style="@style/wrap_match"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/iv_service"
+                style="@style/width_45_height_45"
+                android:paddingTop="@dimen/dip10"
+                android:paddingRight="@dimen/dip20"
+                android:paddingBottom="@dimen/dip10"
+                android:src="@drawable/evaluation_module_service"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_search"
+                style="@style/wrap_match"
+                android:layout_marginLeft="@dimen/dip5"
+                android:layout_marginTop="@dimen/dip7"
+                android:layout_marginRight="@dimen/dip16"
+                android:layout_marginBottom="@dimen/dip7"
+                android:background="@drawable/evaluation_module_bg_text_search"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/dip10"
+                android:text="@string/evaluation_module_search"
+                android:textColor="@color/COLOR_WHITE_FFFFFF"
+                android:textSize="@dimen/font12"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_choice"
+        style="@style/match_height_40"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_mental_health"
+            android:layout_width="@dimen/dip0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/wrap_layout"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_mental_health"
+                    style="@style/wrap_layout"
+                    android:text="全部"
+                    android:textColor="@color/COLOR_BLACK_333333"
+                    android:textSize="@dimen/font14" />
+
+                <ImageView
+                    android:id="@+id/iv_mental_health"
+                    android:layout_width="@dimen/dip11"
+                    android:layout_height="@dimen/dip11"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dip5"
+                    android:src="@drawable/evaluation_module_gray_down" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_area"
+            android:layout_width="@dimen/dip0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/wrap_layout"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    style="@style/wrap_layout"
+                    android:text="@string/evaluation_module_area"
+                    android:textColor="@color/COLOR_BLACK_333333"
+                    android:textSize="@dimen/font14" />
+
+                <ImageView
+                    android:id="@+id/iv_area"
+                    android:layout_width="@dimen/dip11"
+                    android:layout_height="@dimen/dip11"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dip5"
+                    android:src="@drawable/evaluation_module_gray_down" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_filter"
+            android:layout_width="@dimen/dip0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/wrap_layout"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_filter"
+                    style="@style/wrap_layout"
+                    android:text="@string/evaluation_module_filter"
+                    android:textColor="@color/COLOR_BLACK_333333"
+                    android:textSize="@dimen/font14" />
+
+                <ImageView
+                    android:id="@+id/iv_filter"
+                    android:layout_width="@dimen/dip11"
+                    android:layout_height="@dimen/dip11"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dip5"
+                    android:src="@drawable/evaluation_module_gray_down" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/normal_view"
+        style="@style/match_layout" />
+
+</LinearLayout>

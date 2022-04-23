@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/COLOR_white_ffffff"
+    android:orientation="vertical">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pop_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/dip16"
+      >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <TextView
+       android:id="@+id/evaluation_module_consult_determine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dip30"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dip34"
+        android:background="#ff3e86fe"
+        android:gravity="center"
+        android:paddingVertical="@dimen/dp_10"
+        android:text="确定"
+        android:textColor="#ffffffff"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

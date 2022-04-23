@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/COLOR_white_ffffff"
+        android:paddingHorizontal="@dimen/common_padding_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip44">
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="#ff666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改昵称"
+            android:textColor="#ff222222"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvSubmit"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:textColor="#ff3ca7ff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingVertical="@dimen/dip10"
+        android:background="@color/COLOR_white_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/common_padding_horizontal">
+
+        <EditText
+            android:id="@+id/et_nickname"
+            android:maxLength="20"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入昵称"
+            android:textColor="#ff222222"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/dip10"
+        android:layout_marginHorizontal="@dimen/common_padding_horizontal"
+        android:layout_width="154dp"
+        android:layout_height="17dp"
+        android:text="最多20字"
+        android:textColor="#ff999999"
+        android:textSize="12sp" />
+
+
+</LinearLayout>

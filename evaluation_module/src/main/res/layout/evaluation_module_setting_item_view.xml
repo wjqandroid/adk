@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dip59"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/common_padding_horizontal"
+    android:background="@color/COLOR_WHITE_FFFFFF"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/evaluation_module_setting_item_topline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/COLOR_WHITE_F2F1F6"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/evaluation_module_setting_item_image"
+            android:layout_width="@dimen/dip16"
+            android:layout_height="@dimen/dip16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dip16"
+            tools:src="@drawable/evaluation_module_ccollect" />
+
+        <TextView
+            android:id="@+id/evaluation_module_setting_item_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/evaluation_module_setting_item_image"
+            android:layout_toStartOf="@+id/evaluation_module_setting_item_arraw"
+            android:maxLines="1"
+            android:layout_marginStart="11dp"
+            android:ellipsize="end"
+            android:textSize="@dimen/font16"
+            android:textColor="@color/COLOR_BLACK_333333"
+            android:layout_centerVertical="true"
+            tools:text="标题"
+            />
+
+        <ImageView
+            android:id="@+id/evaluation_module_setting_item_arraw"
+            android:layout_width="@dimen/dip10"
+            android:layout_height="@dimen/dip15"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/evaluation_module_arrow_right" />
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:id="@+id/evaluation_module_setting_item_bottomline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/COLOR_WHITE_F2F1F6"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

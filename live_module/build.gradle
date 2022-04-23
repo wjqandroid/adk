@@ -1,0 +1,87 @@
+apply plugin: 'com.jakewharton.butterknife'
+def isApplication = rootProject.ext.isLiveApplication
+if (isApplication){
+    apply plugin: 'com.android.application'
+}else{
+    apply plugin: 'com.android.library'
+}
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        multiDexEnabled true
+
+        if (isApplication) {
+            //组件模式下设置applicationId
+            applicationId "com.visionvera.live"
+        }
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "default"
+    productFlavors{
+        urlDevelop{ //开发地址
+
+        }
+        urlTest{ //测试环境
+
+        }
+        urlYanshi_Tx{//演示环境 腾讯云
+
+        }
+        urlFormat{//正式环境
+
+        }
+    }
+
+    //jdk1.8
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            if (isApplication) {
+                manifest.srcFile 'src/main/java/module/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+            }
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(path:':base_module')
+
+    implementation project(path: ':account_module')
+
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+
+    //Android中节操播放器JieCaoVideoPlayer使用
+    //https://blog.csdn.net/zhaihaohao1/article/details/78029766
+    implementation 'cn.jzvd:jiaozivideoplayer:6.0.0'
+
+}

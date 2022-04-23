@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:ignore="ResourceName">
+
+
+    <ImageView
+        android:id="@+id/iv_service_address_select"
+        android:layout_width="@dimen/dip50"
+        android:layout_height="@dimen/dip50"
+        android:src="@mipmap/checkbox_normal">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_service_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会议室">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_service_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址">
+
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

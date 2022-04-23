@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="@dimen/dip130"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/evaluation_module_solid_ffffff_r2"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingHorizontal="14dp"
+        tools:text="您的心豆余额不足"
+        android:textColor="#ff333333"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/base_module_deviceline"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/COLOR_GRAY_DDDDDD" />
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="11dp"
+        tools:text="我知道了"
+        android:textColor="@color/base_module_theme"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

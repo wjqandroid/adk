@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/match_layout"
+    android:background="@color/COLOR_WHITE_FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/evaluation_module_custom_title_simple" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_evaluation_test"
+        style="@style/match_height_45"
+        app:tabBackground="@android:color/transparent"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="@dimen/dip0"
+        app:tabMaxWidth="@dimen/dip0"
+        app:tabMinWidth="@dimen/dip30"
+        app:tabMode="fixed"
+        app:tabRippleColor="@android:color/transparent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip2"
+        android:background="@color/common_gray_bg" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_evaluation_test"
+        style="@style/match_layout" />
+</LinearLayout>

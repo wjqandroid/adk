@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/COLOR_WHITE_F5F5F5"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_module_common_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp">
+
+            <com.visionvera.psychologist.c.widget.RelativeRadioGroup
+                android:id="@+id/evaluation_module_health_report_relativeradiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/evaluation_module_trend_analysis_happiness_index_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/evaluation_module_trend_anaylsis_btn_bg"
+                        android:button="@null"
+                        android:paddingHorizontal="17dp"
+                        android:paddingVertical="6dp"
+                        android:text="@string/evaluation_module_happiness_index"
+                        android:textColor="@drawable/evaluation_module_trend_anaylsis_btn_tv"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/evaluation_module_trend_analysis_depressed_index_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/evaluation_module_trend_anaylsis_btn_bg"
+                        android:button="@null"
+                        android:paddingHorizontal="17dp"
+                        android:paddingVertical="6dp"
+                        android:text="@string/evaluation_module_depressed_index"
+                        android:textColor="@drawable/evaluation_module_trend_anaylsis_btn_tv"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/evaluation_module_trend_analysis_anxious_index_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/evaluation_module_trend_anaylsis_btn_bg"
+                        android:button="@null"
+                        android:paddingHorizontal="17dp"
+                        android:paddingVertical="6dp"
+                        android:text="@string/evaluation_module_anxious_index"
+                        android:textColor="@drawable/evaluation_module_trend_anaylsis_btn_tv"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+            </com.visionvera.psychologist.c.widget.RelativeRadioGroup>
+
+
+            <TextView
+                android:id="@+id/evaluation_module_calendar_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/evaluation_module_calendar"
+                android:drawableRight="@drawable/evaluation_module_calendar_down"
+                android:textColor="@color/COLOR_BLUE_3E86FE"
+                android:textSize="14sp"
+                tools:text="10月09日 - 11月07日" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/index_linechart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/evaluation_module_score_number"
+                    android:textColor="@color/COLOR_GRAY_666666"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/evaluation_module_date"
+                    android:textColor="@color/COLOR_GRAY_666666"
+                    android:textSize="8sp" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="6dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="阶段分析"
+                        android:textColor="@color/COLOR_BLACK_333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="这是一段幸福指数阶段分析，针对的是当前默认的
+时间段的分析解说，会有具体的数据比对分析。
+当面默认的时间段是从第一次开始测评到最近一次
+测评幸福指数量表的时间段，时间段的选择只能在
+第一次和最近一次之间的时间。其余时间无数据不
+支持查看。"
+                        android:textColor="@color/COLOR_GRAY_666666"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/evaluation_module_explore_myself_detail_consult"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/evaluation_module_blue_btn_bg_corner6"
+                android:text="@string/evaluation_module_click_consult"
+                android:textColor="@color/COLOR_white_ffffff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

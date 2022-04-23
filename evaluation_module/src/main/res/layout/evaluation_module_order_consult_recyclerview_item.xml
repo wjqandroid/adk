@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:cardCornerRadius="0dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/dip11"
+            android:paddingVertical="@dimen/dip10">
+
+            <ImageView
+                android:layout_width="@dimen/dip24"
+                android:layout_height="@dimen/dip24"
+                android:src="@drawable/evaluation_module_ic_order"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip3"
+                android:text="订单编号："
+                android:textColor="@color/COLOR_BLACK_333333"
+                android:textSize="@dimen/font14"
+                 />
+
+            <TextView
+                android:id="@+id/evaluation_module_order_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:textColor="@color/COLOR_BLACK_333333"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font14"
+                tools:text="01912180004" />
+
+            <TextView
+                android:id="@+id/tvOrderStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff7b33"
+                android:textSize="14sp"
+                android:visibility="gone"
+                tools:text="已取消" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff5f5f5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/dip11"
+            android:paddingTop="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/evaluation_module_counselor"
+                android:textColor="#ff999999"
+                android:textSize="@dimen/font14" />
+
+            <TextView
+                android:id="@+id/evaluation_module_counselor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxEms="8"
+                android:textColor="@color/COLOR_BLACK_333333"
+                android:textSize="@dimen/font16"
+                android:textStyle="bold"
+                tools:text="何书桓" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/dip11"
+            android:paddingTop="@dimen/dip15">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/evaluation_module_consult_time"
+                android:textColor="#ff999999"
+                android:textSize="@dimen/font14" />
+
+            <TextView
+                android:id="@+id/evaluation_module_order_consult_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/COLOR_BLACK_333333"
+                android:textSize="14sp"
+                tools:text="2019-12-26 10:00-10:30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/dip11"
+            android:paddingTop="@dimen/dip15">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/evaluation_module_consult_type"
+                android:textColor="#ff999999"
+                android:textSize="@dimen/font14" />
+
+            <TextView
+                android:id="@+id/evaluation_module_order_consult_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/COLOR_BLACK_333333"
+                android:textSize="14sp"
+                tools:text="视频咨询" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#F2F2F2"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/dip11"
+            android:paddingTop="@dimen/dip15"
+            android:paddingBottom="@dimen/dip15">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/evaluation_module_remark"
+                android:textColor="#ff999999"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/evaluation_module_order_consult_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/COLOR_BLACK_333333"
+                    android:textSize="14sp"
+                    tools:text="无" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+

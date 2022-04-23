@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_wrap"
+    android:background="@color/COLOR_WHITE_FFFFFF"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="horizontal">
+
+    <com.visionvera.library.widget.view.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_width="@dimen/dip50"
+        android:layout_height="@dimen/dip50"
+        android:layout_marginLeft="@dimen/dip15"
+        android:layout_marginTop="@dimen/dip15"
+        android:src="@drawable/base_module_default_hospital" />
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:layout_marginLeft="@dimen/dip12"
+        android:layout_marginRight="@dimen/dip15"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/wrap_layout"
+            android:layout_marginTop="@dimen/dip15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/wrap_layout"
+                android:text="某某医疗咨询机构"
+                android:textColor="@color/COLOR_BLACK_000000"
+                android:textSize="@dimen/font16"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dip10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_hospital_level"
+                style="@style/wrap_layout"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="医院等级"
+                android:textColor="@color/COLOR_GRAY_999999"
+                android:textSize="@dimen/font14" />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tv_hospital_quality"
+                style="@style/wrap_layout"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="医院性质"
+                android:textColor="@color/COLOR_GRAY_999999"
+                android:textSize="@dimen/font14" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dipHalf"
+            android:layout_marginTop="@dimen/dip15"
+            android:background="@color/COLOR_GRAY_EEEEEE" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical"
+    android:layout_height="41dp">
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/list_popup_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="测试"
+        android:textColor="@drawable/evaluation_module_sort_popup_item_tv_selector"
+        android:textSize="15sp" />
+
+</RelativeLayout>

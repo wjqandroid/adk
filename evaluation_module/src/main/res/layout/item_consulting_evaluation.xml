@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="ResourceName">
+
+    <TextView
+        android:id="@+id/consulting_evaluation_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip15"
+        android:text="楠楠"
+        android:textColor="#494F68"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dip8">
+
+
+        <com.visionvera.psychologist.c.utils.FiveStarView
+            android:id="@+id/consulting_evaluation_fiveStarView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dip20"
+            android:layout_gravity="center">
+
+        </com.visionvera.psychologist.c.utils.FiveStarView>
+
+        <TextView
+            android:id="@+id/consulting_evaluation_satisfied"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dip10"
+            android:layout_weight="1"
+            android:text="非常满意"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/consulting_evaluation_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="2021-10-26 15:47"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/consulting_evaluation_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip7"
+        android:text="非常感谢咨询师，服务很贴心。不错不错，准备推荐给同事进行咨询预约。"
+        android:textColor="#494F68"
+        android:textSize="14sp" />
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/match_layout"
+    android:background="@color/COLOR_WHITE_F5F5F5"
+    android:orientation="vertical"
+    tools:context=".module.usercenter.activity.FeedBackActivity">
+
+    <include layout="@layout/evaluation_module_custom_title_simple" />
+
+    <ScrollView style="@style/match_layout">
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginHorizontal="@dimen/common_padding_horizontal"
+                android:layout_marginVertical="@dimen/dip10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="请选择你在闪退、卡顿或界面异常中遇到的问题"
+                android:textColor="#ff999999"
+                android:textSize="12sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_feedback_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/COLOR_WHITE_FFFFFF" />
+
+            <RelativeLayout
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/dip10"
+                android:background="@color/COLOR_WHITE_FFFFFF">
+
+                <TextView
+                    style="@style/wrap_layout"
+                    android:layout_marginLeft="@dimen/common_padding_horizontal"
+                    android:layout_marginTop="@dimen/dip10"
+                    android:text="@string/evaluation_module_problem_desc"
+                    android:textColor="@color/COLOR_BLACK_333333"
+                    android:textSize="@dimen/font16" />
+
+                <TextView
+                    android:id="@+id/tv_input_num"
+                    style="@style/wrap_layout"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dip12"
+                    android:layout_marginRight="@dimen/common_padding_horizontal"
+                    android:text="0/200"
+                    android:textColor="@color/COLOR_BLACK_333333"
+                    android:textSize="@dimen/font14" />
+
+                <EditText
+                    android:id="@+id/et_problem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_padding_horizontal"
+                    android:layout_marginTop="@dimen/dip47"
+                    android:layout_marginRight="@dimen/dip10"
+                    android:background="@color/COLOR_WHITE_FFFFFF"
+                    android:gravity="start"
+                    android:hint="@string/evaluation_module_problem_hint_desc"
+                    android:minHeight="@dimen/dip50"
+                    android:maxLength="200"
+                    android:textColor="@color/COLOR_GRAY_666666"
+                    android:textColorHint="@color/COLOR_GRAY_999999"
+                    android:textSize="@dimen/font14" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_problem"
+                    android:layout_marginLeft="@dimen/common_padding_horizontal"
+                    android:layout_marginTop="@dimen/dip10"
+                    android:layout_marginRight="@dimen/dip20"
+                    android:layout_marginBottom="@dimen/dip10">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_feedback_imgs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/evaluation_module_upload_appendix_notice"
+                        android:layout_marginLeft="100dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上传附件图片，最多4张（选填）"
+                        android:textColor="@color/COLOR_GRAY_999999"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/dip10"
+                android:background="@color/COLOR_WHITE_FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/wrap_layout"
+                    android:layout_marginLeft="@dimen/common_padding_horizontal"
+                    android:layout_marginTop="@dimen/dip10"
+                    android:text="@string/evaluation_module_contract_infomation"
+                    android:textColor="@color/COLOR_BLACK_333333"
+                    android:textSize="@dimen/font16" />
+
+                <EditText
+                    android:id="@+id/et_contract"
+                    style="@style/match_height_40"
+                    android:layout_marginLeft="@dimen/common_padding_horizontal"
+                    android:layout_marginTop="@dimen/dip5"
+                    android:layout_marginRight="@dimen/dip20"
+                    android:background="@color/COLOR_WHITE_FFFFFF"
+                    android:ellipsize="end"
+                    android:hint="@string/evaluation_module_contract_infomation_hint"
+                    android:maxLines="1"
+                    android:textColor="@color/COLOR_GRAY_666666"
+                    android:textColorHint="@color/COLOR_GRAY_999999"
+                    android:textSize="@dimen/font14" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_commit"
+                style="@style/match_height_40"
+                android:layout_marginLeft="@dimen/dip30"
+                android:layout_marginTop="@dimen/dip20"
+                android:layout_marginRight="@dimen/dip30"
+                android:layout_marginBottom="@dimen/dip20"
+                android:background="@drawable/evaluation_module_solid_a1c1f7_r4"
+                android:gravity="center"
+                android:text="@string/evaluation_module_commit"
+                android:clickable="false"
+                android:textColor="@color/COLOR_WHITE_FFFFFF"
+                android:textSize="@dimen/font16" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

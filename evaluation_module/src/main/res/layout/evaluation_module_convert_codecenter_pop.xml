@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="@dimen/dip140"
+    android:background="@drawable/evaluation_module_solid_ffffff_r2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兑换码"
+            android:textColor="#ff333333"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_marginStart="@dimen/dip5"
+            android:background="@drawable/evaluation_module_bg_input"
+            android:layout_width="188dp"
+            android:layout_height="@dimen/dip36" />
+    </LinearLayout>
+
+    <View
+        android:background="@color/COLOR_GRAY_DDDDDD"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:textColor="@color/COLOR_GRAY_999999"
+            android:textSize="15sp" />
+
+        <View
+            android:background="@color/COLOR_GRAY_DDDDDD"
+            android:layout_width="@dimen/dip1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="确定"
+            android:textColor="@color/base_module_theme"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

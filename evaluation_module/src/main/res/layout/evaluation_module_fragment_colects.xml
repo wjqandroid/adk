@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_wrap"
+    android:background="@color/COLOR_WHITE_FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_evaluation_collect"
+        style="@style/match_wrap"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_depression_collect"
+            style="@style/match_wrap"
+            android:layout_marginLeft="@dimen/dip20"
+            android:layout_marginRight="@dimen/dip20">
+
+            <com.visionvera.library.widget.ICircleImageView
+                android:id="@+id/evaluation_module_place_holder1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip100"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_depression_name"
+                style="@style/evaluation_module_depression_tv_style"
+                android:layout_toLeftOf="@+id/tv_depression_number"
+                android:text="@string/evaluation_module_depression_scale" />
+
+            <TextView
+                style="@style/evaluation_module_depression_tv1_style"
+                android:text="@string/evaluation_module_test" />
+
+            <TextView
+                android:id="@+id/tv_depression_number"
+                style="@style/evaluation_module_depression_tv2_style"
+                android:text="已测" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_anxiety_collect"
+            style="@style/match_wrap"
+            android:layout_marginLeft="@dimen/dip20"
+            android:layout_marginTop="@dimen/dip15"
+            android:layout_marginRight="@dimen/dip20"
+            android:layout_marginBottom="@dimen/dip20">
+
+            <com.visionvera.library.widget.ICircleImageView
+                android:id="@+id/evaluation_module_place_holder2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip100"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_anxiety_name"
+                style="@style/evaluation_module_depression_tv_style"
+                android:layout_toLeftOf="@+id/tv_anxiety_number"
+                android:text="@string/evaluation_module_anxiety_scale" />
+
+            <TextView
+                style="@style/evaluation_module_depression_tv1_style"
+                android:text="@string/evaluation_module_test" />
+
+            <TextView
+                android:id="@+id/tv_anxiety_number"
+                style="@style/evaluation_module_depression_tv2_style"
+                android:text="已测" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_no_collect"
+        style="@style/wrap_layout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dip45"
+        android:layout_marginBottom="@dimen/dip45"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/dip134"
+            android:layout_height="@dimen/dip100"
+            android:src="@drawable/evaluation_module_nodata" />
+
+        <TextView
+            style="@style/wrap_layout"
+            android:layout_marginTop="@dimen/dip10"
+            android:text="@string/evaluation_module_no_collect"
+            android:textColor="@color/COLOR_GRAY_999999"
+            android:textSize="@dimen/font12" />
+    </LinearLayout>
+
+</LinearLayout>

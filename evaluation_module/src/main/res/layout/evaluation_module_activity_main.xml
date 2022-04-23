@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/match_layout"
+        android:background="@color/COLOR_WHITE_FFFEFE"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/main_content"
+            style="@style/match_layout"
+            android:layout_weight="1.0" />
+
+        <androidx.cardview.widget.CardView
+            android:elevation="3dp"
+            style="@style/match_wrap">
+
+            <FrameLayout
+                style="@style/match_wrap"
+                android:background="@color/COLOR_WHITE_FFFFFF">
+
+                <RadioGroup
+                    android:id="@+id/main_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dip49"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/COLOR_WHITE_FFFFFF"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.visionvera.psychologist.c.widget.NotifyRadioButton
+                        android:id="@+id/tab_home"
+                        style="@style/evaluation_module_main_bottom_tab"
+                        android:drawableTop="@drawable/evaluation_module_tab_home"
+                        android:checked="true"
+                        android:text="@string/evaluation_module_tab_home" />
+
+                    <com.visionvera.psychologist.c.widget.NotifyRadioButton
+                        android:id="@+id/tab_all_evaluation"
+                        style="@style/evaluation_module_main_bottom_tab"
+                        android:drawableTop="@drawable/evaluation_module_tab_knowledge"
+                        android:text="@string/evaluation_module_tab_knowledge_library" />
+
+                    <com.visionvera.psychologist.c.widget.NotifyRadioButton
+                        android:id="@+id/tab_my_evluation"
+                        style="@style/evaluation_module_main_bottom_tab"
+                        android:drawableTop="@drawable/evaluation_module_tab_live"
+                        android:text="@string/evaluation_module_tab_course" />
+
+                    <com.visionvera.psychologist.c.widget.NotifyRadioButton
+                        android:id="@+id/tab_health_report"
+                        style="@style/evaluation_module_main_bottom_tab"
+                        android:drawableTop="@drawable/evaluation_module_tab_mine"
+                        android:text="@string/evaluation_module_tab_usercenter" />
+                </RadioGroup>
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/call_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/reject_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/reject"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+

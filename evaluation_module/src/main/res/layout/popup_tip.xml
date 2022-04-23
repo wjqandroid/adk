@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ResourceName">
+
+    <LinearLayout
+        android:id="@+id/tip_top_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_soild_ffffff_r6"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="274dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/tip_top_img"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/bg_tip_login"
+                />
+
+            <ImageView
+                android:id="@+id/tip_top_img_ys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/img_ys"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tip_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff333333"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="登录您的账号"
+            />
+
+        <TextView
+            android:id="@+id/tip_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tip_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingVertical="11dp"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="32dp"
+            android:background="@drawable/evaluation_module_solid_3e86fe_r6"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="现在登录"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tip_bottom_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="42dp"
+        android:layout_below="@id/tip_top_layout"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/img_tip_cancel"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.EvaluationGauge.activity.SelfAssessmentCommitActivity"
+    android:background="@color/COLOR_WHITE_F5F5F5">
+
+    <include layout="@layout/evaluation_module_custom_title_simple"/>
+
+    <LinearLayout
+        android:id="@+id/normal_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/COLOR_white_ffffff"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="17dp"
+                android:src="@drawable/evaluation_module_scale_commit_success" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/evaluation_module_commit_success"
+                android:textColor="@color/COLOR_BLACK_333333"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="11dp"
+                android:gravity="center"
+                android:text="@string/evaluation_module_commit_success_notice" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/look_result"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/evaluation_module_check_result"
+            android:textColor="@color/COLOR_white_ffffff"
+            android:textSize="@dimen/font15"
+            android:background="@drawable/account_module_bg_login"
+            android:layout_marginHorizontal="16dp" />
+
+        <Button
+            android:id="@+id/back_mainpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/evaluation_module_back_mainpage"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/base_module_theme"
+            android:textSize="@dimen/font15"
+            android:background="@drawable/evaluation_module_shape_solid_fff2f5fb_corner3"
+            android:layout_marginHorizontal="16dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

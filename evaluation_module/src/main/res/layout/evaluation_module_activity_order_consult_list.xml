@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/COLOR_white_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/evaluation_module_order_consult_list_back"
+                android:layout_width="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/base_module_back" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginHorizontal="@dimen/dip40"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dip60">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginStart="@dimen/dip20"
+                    android:id="@+id/rlTab1"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="45dp">
+
+                    <LinearLayout
+                        android:paddingVertical="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+
+                        <TextView
+                            android:id="@+id/tvTab1"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="申请列表"
+                            android:textColor="@color/COLOR_BLACK_333333"
+                            android:textSize="@dimen/font14" />
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivTab1Indicator"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/evaluation_module_bg_tab_indicator"
+                        android:layout_width="20dp"
+                        android:layout_height="3dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginEnd="@dimen/dip20"
+                    android:id="@+id/rlTab2"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="45dp">
+
+                    <LinearLayout
+                        android:paddingVertical="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+
+                        <TextView
+                            android:id="@+id/tvTab2"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="受邀列表"
+                            android:textColor="@color/COLOR_GRAY_666666"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivTab2Indicator"
+                        android:visibility="invisible"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/evaluation_module_bg_tab_indicator"
+                        android:layout_width="20dp"
+                        android:layout_height="3dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.visionvera.library.widget.NoScrollViewPager
+        android:id="@+id/evaluation_module_order_consult_list_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

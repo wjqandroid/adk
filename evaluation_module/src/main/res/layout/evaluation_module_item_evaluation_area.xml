@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_wrap"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:button="@null"
+        android:id="@+id/cb_evaluation_type"
+        style="@style/match_wrap"
+        android:paddingVertical="@dimen/dip10"
+        android:text="ddddd"
+        android:textColor="@drawable/evaluation_module_evaluation_type_text"
+        android:textSize="@dimen/font12" />
+</LinearLayout>
