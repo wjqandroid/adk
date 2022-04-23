@@ -1,5 +1,5 @@
 <resources>
-    <string name="evaluation_module_app_name">@string/appName</string>
+    <string name="evaluation_module_app_name">粤心安开发</string>
     <string name="evaluation_module_tab_home">首页</string>
     <string name="evaluation_module_tab_courselling">心理咨询</string>
     <string name="evaluation_module_tab_knowledge_library">知识圈</string>

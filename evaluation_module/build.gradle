@@ -3,13 +3,15 @@ import java.text.SimpleDateFormat
 apply plugin: 'com.jakewharton.butterknife'
 //控制lib模式或app模式
 apply plugin: 'com.android.library'
+//apply plugin: 'com.android.application'
+
 def isApplication = rootProject.ext.isEvalutionApplication
-if (isApplication) {
-    apply plugin: 'com.android.library'
+//if (isApplication) {
+////    apply plugin: 'com.android.library'
 //    apply plugin: 'com.android.application'
-} else {
-apply plugin: 'com.android.library'
-}
+//} else {
+//    apply plugin: 'com.android.library'
+//}
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
@@ -153,7 +155,6 @@ android {
     //让studio提示程序员加前缀
     //resourcePrefix 只能限定Xml资源，并不能限定图片资源，图片资源扔需要自身注意设置前缀名
 //    resourcePrefix "${project.name}_"
-
 
 
 }
