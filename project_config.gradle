@@ -1,7 +1,7 @@
 //引用相关存放处
 ext {
     isAccountApplication = false
-    isEvalutionApplication = true
+    isEvalutionApplication = false
     isLiveApplication = false
     android = [
             compileSdkVersion: 28,
