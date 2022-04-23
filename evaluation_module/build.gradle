@@ -2,9 +2,11 @@ import java.text.SimpleDateFormat
 
 apply plugin: 'com.jakewharton.butterknife'
 //控制lib模式或app模式
+apply plugin: 'com.android.library'
 def isApplication = rootProject.ext.isEvalutionApplication
 if (isApplication) {
-    apply plugin: 'com.android.application'
+    apply plugin: 'com.android.library'
+//    apply plugin: 'com.android.application'
 } else {
 apply plugin: 'com.android.library'
 }
@@ -132,14 +134,14 @@ android {
     }
 
     //修改生成的apk名字
-    applicationVariants.all { variant ->
-        variant.outputs.all { output ->
-            if ("release".equals(variant.buildType.name)) {
-                def finalApkName = "粤心安_v${defaultConfig.versionName}_${releaseTime()}.apk"
-                outputFileName = finalApkName
-            }
-        }
-    }
+//    applicationVariants.all { variant ->
+//        variant.outputs.all { output ->
+//            if ("release".equals(variant.buildType.name)) {
+//                def finalApkName = "粤心安_v${defaultConfig.versionName}_${releaseTime()}.apk"
+//                outputFileName = finalApkName
+//            }
+//        }
+//    }
 
     //添加如下配置
     lintOptions {
